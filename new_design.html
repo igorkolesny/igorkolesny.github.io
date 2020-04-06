@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="stylesheet" href="new_style.css">
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/jquery.horizonScroll.js"></script>
+	<script src="https://kit.fontawesome.com/b21ce14f0c.js" crossorigin="anonymous"></script>
+	<script src="assets/js/text.js"></script>
+</head>
+<body>
+
+	<div class="horizon-prev">
+		<div class="leftArrow"></div>
+	</div>
+
+    <div class="horizon-next">
+    	<div class="rightArrow"></div>
+    </div>
+
+
+	<header>
+		<div class="left_buttons">
+			<a href="#section-section1" class="a_but">SECTION 1</a>
+			<a href="#section-section2" class="a_but">SECTION 2</a>
+		</div>
+		<div class="logo">
+			<p>KeinStyle Web</p>
+		</div>
+		<div class="right_buttons">
+			<a href="#section-section3" class="a_but">SECTION 3</a>
+			<a href="#section-section4" class="a_but">SECTION 4</a>
+		</div>
+	</header>
+
+
+
+	<div class="content">
+		<section data-role="section" class="section1" id="section-section1">
+			<h1 class="th1">Добро пожаловать!</h1>
+			<div class="wrap">
+				<div class="home">
+					<div class="photo">
+	                    <img src="assets/img/photo.jpg" alt="photo">
+	                </div>
+	                <div class="description">
+	                	<div class="text" id="animate_text"></div>
+	                </div>
+	            </div>
+			</div>
+		</section>
+
+		<section data-role="section" class="section2" id="section-section2">
+			<h1 class="th1">портфолио</h1>
+			<div class="wrap">
+				<div class="portfolio">
+            <div class="pbox">
+                <div class="pitem">
+                    <img src="https://via.placeholder.com/300x300" alt="">
+                </div>
+                <div class="pitem">
+                    <img src="https://via.placeholder.com/300x300" alt="">
+                </div>
+                <div class="pitem">
+                    <img src="https://via.placeholder.com/300x300" alt="">
+                </div>
+            </div>
+        </div>
+			</div>
+		</section>
+
+
+		<section data-role="section" class="section3" id="section-section3">
+			<h1 class="th1">заказ услуги</h1>
+			<div class="wrap">
+
+				<div class="orderbox">
+					<div class="order_left">
+			            <p><input type="text" id="name" placeholder="Ваше имя"></p>
+			            <p><input type="text" id="email" placeholder="E-mail"></p>
+			            <p><input type="tel" id="number" placeholder="Ваш номер 375xx-xx-xx-xx"></p>
+			            <select name="" id="uslugi">
+			                <option>Landing Pade</option>
+			                <option>Персональный сайт-визитка</option>
+			                <option>Сайт компании</option>
+			                <option>Обычная верстка HTML/CSS</option>
+			                <option>Создание макета дизайна в PSD</option>
+			                <option>Адаптация сайта под любые устройсва</option>
+			                <option>PHP/JS скриптинг</option>
+			            </select>
+					</div>
+					<div class="order_right">
+			            <p><textarea id="message" placeholder="Комментарий к заказу"></textarea></p>
+			            <p><button id="orderbut" onclick="post_query('mail', 'order', 'name.email.number.uslugi.message')">Заказать</button></p>
+			        </div>
+        		</div>
+			</div>
+		</section>
+
+		<section data-role="section" class="section4" id="section-section4">
+			<img src="https://via.placeholder.com/300x300" alt="">
+			<div class="text"><p>VSE!</p></div>
+		</section>
+
+	</div>
+
+	<footer>
+		<p>design &amp; develop by:</p><br>
+		<b>Igor "KeinStyle" Kolesny</b>
+	</footer>
+
+
+	 <script type="text/javascript">
+        $("section").horizon();
+    </script>
+
+</body>
+</html>
