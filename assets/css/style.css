@@ -1,0 +1,808 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body {
+    font-size: 16px;
+    background: url('../img/bg.jpg') #d7d7d7 no-repeat;
+    background-attachment: scroll;
+    background-size: auto;
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 20px 10px 100px 20px rgba(0, 0, 0, 0.4);
+    background-blend-mode: overlay;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+*, p {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+.left_buttons {
+    font-family: 'Franklin Gothic Book';
+    margin-left: 10%;
+    display: inline-flex;
+
+    -webkit-animation: fadeInLeft .5s linear; /* Safari 4+ */
+    -moz-animation: fadeInLeft .5s linear; /* Fx 5+ */
+    -o-animation: fadeInLeft .5s linear; /* Opera 12+ */
+    animation: fadeInLeft .5s linear; /* IE 10+, Fx 29+ */
+}
+
+
+.right_buttons {
+    font-family: 'Franklin Gothic Book';
+    margin-right: 10%;
+    display: inline-flex;
+
+    -webkit-animation: fadeInRight .5s linear; /* Safari 4+ */
+    -moz-animation: fadeInRight .5s linear; /* Fx 5+ */
+    -o-animation: fadeInRight .5s linear; /* Opera 12+ */
+    animation: fadeInRight .5s linear; /* IE 10+, Fx 29+ */
+}
+
+
+
+.a_but {
+    display: block;
+    margin: auto;
+    padding: .5rem 1.25rem;
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #2f2f48;
+    position: relative;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.a_but::after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: #2f2f48ba;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+    border-radius: .3em;
+}
+  
+.a_but:hover::after {
+    color: #000;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+.a_but:hover {
+    color: #fff;
+}
+
+
+
+
+.p_but {
+   /* display: block;*/
+    margin: auto;
+    padding: .5rem 1.25rem;
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #c1dcff;
+    position: relative;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.p_but::after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    right: 1.25rem;
+    left: 1.25rem;
+    background-color: #eaeaeae6;
+    transition: all .3s cubic-bezier(.2, 0, 0, 1);
+    transform-origin: bottom center;
+    z-index: -1;
+    border-radius: .3em;
+}
+  
+.p_but:hover::after {
+    color: #000;
+    right: 0;
+    left: 0;
+    height: 100%;
+}
+
+.p_but:hover {
+    color: #393939;
+}
+
+
+
+
+
+
+
+
+
+.logo {
+    font-family: 'Rage Italic';
+    font-size: 4.5em;
+    color: #2f2f48;
+
+    -webkit-animation: flipInX 1s linear; /* Safari 4+ */
+    -moz-animation: flipInX 1s linear; /* Fx 5+ */
+    -o-animation: flipInX 1s linear; /* Opera 12+ */
+    animation: flipInX 1s linear; /* IE 10+, Fx 29+ */
+}
+
+
+
+.horizon-prev,
+.horizon-next {
+    position: fixed;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 9999;
+}
+
+.horizon-next {
+    right: 0;
+    margin-right: 1em;
+}
+
+.horizon-prev {
+    left: 0;
+    margin-left: 1em;
+}
+
+
+.leftArrow::before {
+    content: "\f053";
+    font-family: FontAwesome;
+    font-size: 5em;
+    color: #173442;
+    opacity: .3;
+}
+
+.leftArrow:hover:before {
+    color: #0d122b;
+    opacity: .8;
+}
+
+.rightArrow::before {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 5em;
+    color: #173442;
+    opacity: .3;
+    transition: opacity .3s linear;
+}
+
+.rightArrow:hover:before {
+    color: #0d122b;
+    opacity: .8;
+}
+
+
+.content {
+    display: flex;
+    padding: 1em;
+    position: relative;
+    top: 15vh;
+    margin: 0 1em 0 1em;
+}
+
+
+.wrap {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
+section {
+    overflow: hidden;
+    max-width: 100vw;
+    width: 100%;
+}
+
+.section1 {
+    
+}
+
+.section2 {
+}
+
+.section3 {
+    
+}
+
+.section4 {
+}
+
+.th1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Book';
+    color: #c46363;
+
+    -webkit-animation: fadeInDown .3s linear; /* Safari 4+ */
+    -moz-animation: fadeInDown .3s linear; /* Fx 5+ */
+    -o-animation: fadeInDown .3s linear; /* Opera 12+ */
+    animation: fadeInDown .3s linear; /* IE 10+, Fx 29+ */
+}
+
+
+.home {
+    display: flex;
+}
+
+.photo {
+    width: 18.75em;
+    height: 18.75em;
+
+    min-width: 18.75em;
+    min-height: 18.75em;
+
+    border: 0.625em solid #3c404dd4;
+    overflow: hidden;
+    border-radius: 18.75em;
+
+    -webkit-animation: pulsing 2s infinite;
+    animation: pulsing 2s infinite;
+
+}
+
+
+
+.photo img {
+    width: 100%;
+    background-size: cover;
+}
+
+
+
+
+.dud {
+    color: #757575;
+}
+
+#animate_text {
+    font-size: 2.5em;
+    font-family: 'Franklin Gothic Book';
+    color: #3c404d;
+}
+
+
+.description {
+    padding-top: 2.5em;
+    padding-left: 3em;
+
+
+    -webkit-animation: bounceInRight 1s linear; /* Safari 4+ */
+    -moz-animation: bounceInRight 1s linear; /* Fx 5+ */
+    -o-animation: bounceInRight 1s linear; /* Opera 12+ */
+    animation: bounceInRight 1s linear; /* IE 10+, Fx 29+ */
+}
+
+
+
+.infotext p {
+    font-size: 20px;
+    font-family: Franklin Gothic Book;
+    font-weight: bold;
+    color: #2f2f48;
+    line-height: 1.2;
+
+    -webkit-animation: pulse 15s infinite; /* Safari 4+ */
+    -moz-animation: pulse 15s infinite; /* Fx 5+ */
+    -o-animation: pulse 15s infinite; /* Opera 12+ */
+    animation: pulse 15s infinite; /* IE 10+, Fx 29+ */
+}
+
+
+/* portfolio */
+
+.pbox {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.pitem {
+    border: 1px solid #919191;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* zakaz */
+
+.orderbox {
+    margin: 0 auto;
+    width: 50em;
+    display: flex;
+
+}
+
+.order_left {
+    margin-right: .7em;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], select {
+    height: 2.5em;
+    padding: .5em;
+    text-transform: uppercase;
+    border: none;
+    margin-bottom: .7em;
+    border-radius: .3em;
+    width: 20em;
+    background: #ffffff8a;
+    border: 1px solid #606060ad;
+}
+
+
+textarea {
+    width: 38.5em;
+    height: 15em;
+    margin-bottom: .7em;
+    border-radius: .3em;
+    resize: none;
+    border: none;
+    padding: .5em;
+    text-transform: uppercase;
+     background: #ffffff8a;
+    border: 1px solid #606060ad;
+}
+
+button#orderbut {
+    width: 12em;
+    padding: .7em;
+    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: #efefef;
+    color: #3c404d;
+    font-family: Franklin Gothic Book;
+    transition: all .3s linear;
+    line-height: 1;
+}
+
+button#orderbut:hover {
+    transition: all .3s linear;
+    background: #54175b;
+    opacity: .8;
+    color: white;
+}
+
+
+
+/* contacts */
+
+
+
+
+.contacts_wrapper {
+    border-radius: 3px;
+    font-family: Franklin Gothic Book;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.telegram, .vk, .youtube, .instagram, .email, .other {
+    text-decoration: none;
+}
+
+
+.telegram::before, .vk::before, .youtube::before, .instagram::before, .email::before, .other::before {
+    font-family: fontawesome;
+    font-size: 150px;
+    display: inline;
+    color: #41576cc7;
+    transition: .4s ease-in-out;
+}
+
+
+
+.tg_info, .vk_info, .yt_info, .ins_info {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 30px;
+    border: 3px solid;
+    padding: 20px;
+    width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    background: #d5d5d5ad;
+    transition: .3s linear;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.telegram::after, .vk::after, .youtube::after, .instagram::after, .email::after, .other::after{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.telegram:hover::after, .vk:hover::after, .instagram:hover::after, .youtube:hover::after, .email:hover::after {
+  opacity: 1;
+  visibility: visible;
+  transition: .2s ease-in-out .4s;
+}
+
+.telegram:hover::after, .vk:hover::after, .instagram:hover::after, .youtube:hover::after, .email:hover::after {
+  bottom: 60px;
+}
+
+
+
+
+.telegram::before {
+    content: '\f2c6';
+}
+
+
+.telegram:hover::before {
+    color: #0a6fd0c7;
+    transition: .2s linear .2s;
+    cursor: pointer;
+}
+
+
+.telegram:hover  .tg_info {
+    opacity: 1;
+    visibility: visible;
+    transition: .2s linear .2s;
+}
+
+.telegram::after {
+    content: attr(data-tooltip);
+    width: 200px;
+    height: auto;
+    line-height: 1.5;
+    background: #dfdfdf9e;
+    border-radius: 5px;
+    bottom: 205px;
+    border: 3px solid #5c6c7e;
+    color: #2f2f48;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+
+
+
+.vk::after {
+    content: attr(data-tooltip);
+    width: 200px;
+    height: auto;
+    line-height: 1.5;
+    background: #dfdfdf9e;
+    border-radius: 5px;
+    bottom: 205px;
+    border: 3px solid #5c6c7e;
+    color: #2f2f48;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+
+
+.vk::before {
+    content: '\f189';
+}
+
+.vk:hover::before {
+    color: #00318ec7;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+
+
+
+
+.youtube::before {
+    content: '\f167';
+}
+
+
+.youtube::after {
+    content: attr(data-tooltip);
+    width: 200px;
+    height: auto;
+    line-height: 1.5;
+    background: #dfdfdf9e;
+    border-radius: 5px;
+    bottom: 205px;
+    border: 3px solid #5c6c7e;
+    color: #2f2f48;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.youtube:hover::before {
+    color: #d03838c7;;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.instagram::before {
+    content: '\f16d';
+}
+
+
+.instagram::after {
+    content: attr(data-tooltip);
+    width: 200px;
+    height: auto;
+    line-height: 1.5;
+    background: #dfdfdf9e;
+    border-radius: 5px;
+    bottom: 205px;
+    border: 3px solid #5c6c7e;
+    color: #2f2f48;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.instagram:hover::before {
+    color: #b319b0c7;;
+    transition: .2s linear;
+    cursor: pointer;
+}
+
+
+h3 {
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Book';
+    font-size: 24px;
+    color: #10103e;
+}
+
+
+
+footer {
+    position: fixed;
+    top: 92vh;
+    width: 100%;
+    height: 5vh;
+    text-align: center;
+    padding: 10px;
+    font-family: Franklin Gothic Book;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 0.6;
+    color: #717171;
+}
+
+
+
+.\33 20 {
+    text-transform: uppercase;
+    color: wheat;
+    font-weight: bold;
+    display: none;
+}
+
+
+
+
+
+
+/* скролл */
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #cacaca;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: #374f8e;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #cacaca;
+}
+
+
+
+
+
+/* анимации */
+
+
+@keyframes pulsing {
+    0% {
+        -webkit-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0, 1.0);
+        transform: scale(1.0, 1.0);
+    }
+
+    100% {
+        -webkit-transform: scale(0.95, 0.95);
+        transform: scale(0.95, 0.95);
+    }
+}
+
+
+
+
+
+
+
+/*плавная загрузка страниц*/
+@-webkit-keyframes fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-moz-keyframes    fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@-o-keyframes      fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+@keyframes         fade-in {   0% { opacity: 0.1; }   100% { opacity: 1; }   }
+ 
+body {
+  -webkit-animation: fade-in 1s linear; /* Safari 4+ */
+  -moz-animation: fade-in 1s linear; /* Fx 5+ */
+  -o-animation: fade-in 1s linear; /* Opera 12+ */
+  animation: fade-in 1s linear; /* IE 10+, Fx 29+ */
+}
+
+
+
+@media (max-width: 720px) {
+
+    html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    }
+
+
+    section {
+        overflow: hidden;
+        max-width: 100vw;
+        width: 100%;
+        margin-top: 130px;
+    }
+
+    .content {
+        top: 0;
+        position: inherit;
+    }
+
+    .home {
+        display: block;
+    }
+
+    .photo {
+        width: 250px;
+        height: 250px;
+        min-width: 250px;
+        min-height: 250px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .wrap {
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .description {
+        padding-left: 1em;
+    }
+
+    .infotext p {
+        font-size: 18px;
+        word-wrap: anywhere;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+
+    .rightArrow::before {
+        font-size: 3em;
+    }
+
+    .leftArrow::before {
+        font-size: 3em;
+    }
+
+
+    .left_buttons {
+        margin-left: 0;
+    }
+
+    .logo {
+        font-size: 2.5em;
+    }
+
+    .right_buttons {
+        margin-right: 0;
+    }
+
+    .a_but {
+        font-size: 18px;
+    }
+
+
+    .orderbox {
+        display: block;
+        max-width: 600px;
+    }
+
+
+    .order_left {
+    }
+
+
+    input[type="text"], input[type="password"], input[type="tel"], select, textarea {
+        width: 100%;
+    }
+
+
+    button#orderbut {
+        left: 35%;
+        position: relative;
+    }
+
+
+}
