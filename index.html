@@ -1,12 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>test</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>KeinStyle</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/jquery.horizonScroll.js"></script>
+    <script src="https://kit.fontawesome.com/b21ce14f0c.js" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script src="assets/js/jquery.mask.min.js"></script>
+    <script>
+        $(function() {
+            $('#number').mask('+375(00)000-00-00');
+        });
+
+    </script>
+
+    <script type="text/javascript">
+        var submitted = false;
+
+    </script>
+
+    <script>
+        function resetzakaz() {
+            if (http.readyState == 4 && http.status == 200) {
+                alert(http.responseText + ', Ваше сообщение отправлено!');
+                this.reset();
+            }
+        }
+
+    </script>
 </head>
+
 <body>
 
-	hello world!
+    <div class="horizon-prev">
+        <div class="leftArrow"></div>
+    </div>
+
+    <div class="horizon-next">
+        <div class="rightArrow"></div>
+    </div>
+
+    <header>
+        <div class="320">open</div>
+        <div class="left_buttons">
+            <a href="#section-section1" class="a_but">главная</a>
+            <a href="#section-section2" class="a_but">портфолио</a>
+        </div>
+        <div class="logo">
+            <p>KeinStyle</p>
+        </div>
+        <div class="right_buttons">
+            <a href="#section-section3" class="a_but">заказать</a>
+            <a href="#section-section4" class="a_but">контакты</a>
+        </div>
+    </header>
+    <div class="content">
+
+
+        <section data-role="section" class="section1" id="section-section1">
+            <h1 class="th1">Добро пожаловать!</h1>
+            <div class="wrap">
+                <div class="home">
+
+                    <div class="photo">
+                        <img src="assets/img/photo.jpg" alt="photo">
+                    </div>
+
+                    <div class="description">
+                        <!-- <div class="text" id="animate_text"></div>-->
+                        <div class="infotext">
+                            <p>
+                                Привет, я веб-программист самоучка, работаю в веб-студии FranzWeb.<br>
+                                Программирование для меня это одно из направлений которым я интересуюсь и зарабатываю на жизнь.<br>
+                                Я занимаюсь разработкой сайтов, начиная с простых лендингов, и заканчивая многостраничными средними проектами.<br>
+                                Имею опыт и знания в HTML, CSS, JavaScript, PHP, а также занимаюсь дизайном и созданием макетов для сайтов.<br>В свободное от разработки время, я веду свой канал на YouTube и в Telegram.<br>
+                                С ними ты сможешь ознакомиться, перейдя в раздел "Контакты".<br>
+                                Также изучаю, тестирую и настраиваю различные Linux дистрибутивы.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-role="section" class="section2" id="section-section2">
+            <h1 class="th1">портфолио</h1>
+            <div class="wrap">
+                <div class="portfolio">
+                    <div class="wrapper">
+                        <input type="radio" name="point" id="slide1" checked>
+                        <input type="radio" name="point" id="slide2">
+                        <input type="radio" name="point" id="slide3">
+                        <input type="radio" name="point" id="slide4">
+                        <input type="radio" name="point" id="slide5">
+                        <div class="slider">
+                            <div class="slides slide1">
+                                <div class="s1_info">
+                                    <div class="sl_left">
+                                        <h3>promproekt.by</h3>
+                                        <p>Дизайн, вертка и скрипты по заказу от FranzWeb</p>
+                                    </div>
+                                    <div class="sl_right">
+                                        <a href="http://promproekt.by/" class="p_but" target="_blank">Ознакомиться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slides slide2">
+                                <div class="s1_info">
+                                    <div class="sl_left">
+                                        <h3>ProjectPhoto</h3>
+                                        <p>Мой незаконченый проект. Исходники имеются.</p>
+                                    </div>
+                                    <div class="sl_right">
+                                        <a href="pp_more" class="p_but">Ознакомиться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slides slide3">
+                                <div class="s1_info">
+                                    <div class="sl_left">
+                                        <h3>Арканоид на JavaScript</h3>
+                                        <p>Самая простая и примитивная игра-арканоид на чистом JS</p>
+                                    </div>
+                                    <div class="sl_right">
+                                        <a href="ark_more" class="p_but" target="_blank">Ознакомиться</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slides slide4"></div>
+                            <div class="slides slide5"></div>
+                        </div>
+                        <div class="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <!--<label for="slide4"></label>
+                    <label for="slide5"></label>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section data-role="section" class="section3" id="section-section3">
+            <h1 class="th1">заказ услуги</h1>
+            <div class="wrap">
+                <div class="orderbox">
+                    <div class="order_left">
+                        <iframe id=hidden_iframe name=hidden_iframe onload="submitted&&()" style=display:none></iframe>
+                        <form class="form" id="zakazform" action="https://docs.google.com/forms/d/e/1FAIpQLScM4lxpLUmp-Mbz-zdnz8iaEnXCb3QMmpWymNeJFUlNs99CUw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true; alert('Заказ принят на обработку!')">
+                            <p><input name="emailAddress" type="text" id="name" placeholder="E-mail" required></p>
+                            <p><input name="entry.32898009" type="text" id="email" placeholder="Ваше имя" required></p>
+                            <p><input name="entry.1169841425" type="tel" id="number" placeholder="Ваш номер 375xx-xx-xx-xx" required></p>
+
+                            <select name="entry.1153172326" id="uslugi" required>
+                                <option name="entry.1153172326" value="Вариант 1">Landing Pade</option>
+                                <option name="entry.1153172326" value="Вариант 2">Персональный сайт-визитка</option>
+                                <option name="entry.1153172326" value="Вариант 3">Сайт компании</option>
+                                <option name="entry.1153172326" value="Вариант 4">Обычная верстка HTML/CSS</option>
+                                <option name="entry.1153172326" value="Вариант 5">Создание макета дизайна в PSD</option>
+                                <option name="entry.1153172326" value="Вариант 6">Адаптация сайта под любые устройсва</option>
+                                <option name="entry.1153172326" value="Вариант 7">PHP/JS скриптинг</option>
+                            </select>
+
+
+                    </div>
+                    <div class="order_right">
+                        <p><textarea name="entry.21497227" id="message" placeholder="Комментарий к заказу"></textarea></p>
+                        <p><input type="submit" value="Send" /></p>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section data-role="section" class="section4" id="section-section4">
+            <h1 class="th1">контакты</h1>
+            <div class="wrap">
+                <div class="contacts_wrapper hi-icon-effect-5">
+
+                    <a class="telegram" href="https://t.me/webkeinstyle" target="_blank" data-tooltip="мой телеграм канал, посвященный веб разработке, Linux и Windows системам"></a>
+
+                    <a class="vk" href="https://vk.com/kolesny_igor" target="_blank" data-tooltip="моя страница ВКонтакте"></a>
+
+                    <a class="youtube" href="https://youtube.com/user/thekein1115" target="_blank" data-tooltip="мой канал на YouTube? на нем видео различной тематики, игры, обзоры, и обучающие ролики"></a>
+
+                    <a class="instagram" href="https://www.instagram.com/igor.kolesny/" target="_blank" data-tooltip="Мой инстаграм, тут ты сможешь следить за мной и узнавать свежие новости первым"></a>
+
+                    <!-- <a class="email" href="" target="_blank" data-tooltip="Отправить обращение/вопрос на почту или предложить сотрудничество"></a>-->
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+    </div>
+
+    <footer>
+        <p>design &amp; develop by:</p><br>
+        <b>Igor "KeinStyle" Kolesny</b>
+    </footer>
+
+
+    <script type="text/javascript">
+        $("section").horizon();
+
+    </script>
+
+
 
 </body>
+
 </html>
