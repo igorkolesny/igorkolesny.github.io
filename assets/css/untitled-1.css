@@ -1,0 +1,51 @@
+.gradient {
+  background: linear-gradient(120deg,#b10b00,#ff0f00);
+  color: #fff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border-color: #ffffff;
+}
+
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-outline-primary:hover {
+  color: #000000;
+  background-color: #ec0e00;
+  border-color: #ee0e00;
+  transition: all .3s linear;
+}
+
+.btn-outline-primary {
+  color: #0ea0ff;
+  border-color: #ed0e00;
+}
+
+.btn:hover {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.btn-outline-primary:hover {
+  color: #ffffff;
+  background-color: #ff2113;
+  border-color: #ff1d0f;
+}
+
+.btn:hover {
+  color: #212529;
+  text-decoration: none;
+}
+
+.portfolio-block.skills {
+  border-bottom: none;
+}
+
