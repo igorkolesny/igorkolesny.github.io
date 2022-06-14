@@ -1,0 +1,1006 @@
+@media (max-width: 1560px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .head-menu ul li {
+        margin-left: 30px;
+    }
+
+    .slider_trainers_inner .prev.slick-arrow {
+        left: -30px;
+    }
+
+    .slider_trainers_inner .next.slick-arrow {
+        right: -30px;
+    }
+
+    .footer-menu ul li a {
+        margin-left: 32px;
+    }
+
+    .about-banner img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-item {
+        flex: 0 1 50%;
+        max-width: 580px;
+    }
+
+}
+
+@media (max-width: 1380px) {
+
+    .container {
+        padding: 0 60px;
+    }
+
+    header .logo a img {
+        height: 90px;
+    }
+
+    .head-menu ul li a {
+        font-size: 16px;
+    }
+
+    .head-menu ul li {
+        margin-left: 15px;
+    }
+
+    .footer-menu ul li a {
+        margin-left: 25px;
+        font-size: 14px;
+    }
+
+    .video-item {
+        flex: 0 1 50%;
+        max-width: 520px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .video-item {
+        flex: 0 1 50%;
+        max-width: 486px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    header .container {
+        padding: 0;
+    }
+
+    section.main_slider .container {
+        padding: 0;
+    }
+
+    section.welcome {
+        padding: 40px 0px 50px 0px;
+    }
+
+    section.trainers {
+        padding: 75px 0px 60px 0px;
+    }
+
+    footer {
+        padding: 32px 0px 60px 0px;
+    }
+
+    header {
+        -webkit-box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.100);
+        -moz-box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.100);
+        box-shadow: 0px 6px 11px -2px rgba(0, 0, 0, 0.100);
+        padding: 0;
+    }
+
+    header .logo a img {
+        height: 60px;
+    }
+
+    header .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    .crumbs {
+        border-top: none;
+    }
+
+    .main_slider_wrapper .next.slick-arrow {
+        right: 15px;
+    }
+
+    .main_slider_wrapper .prev.slick-arrow {
+        left: 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .head-right {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .social-num {
+        margin-bottom: 0;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .numbers {
+        width: 90px;
+        height: 90px;
+        position: relative;
+        background: #2042ad;
+    }
+
+    .numbers:before {
+        position: absolute;
+        content: '';
+        top: 0;
+        background: url(../img/icons/telephone.png) no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        transform: rotate(0deg);
+        transition: transform .2s ease-in;
+    }
+
+    .num {
+        opacity: 0;
+        position: absolute;
+        top: 100%;
+        z-index: 999;
+        right: -100%;
+        background: #2042ad;
+        width: 480px;
+        height: 0;
+        text-align: right;
+        overflow: hidden;
+        padding: 25px;
+        transition: all .3s linear;
+    }
+
+    .num a {
+        color: #fff;
+        font-size: 33px;
+        margin-bottom: 15px;
+    }
+
+
+    .head-menu {
+        width: 90px;
+        height: 90px;
+        position: relative;
+    }
+
+    .head-menu ul.nav {
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        z-index: 9999;
+        background: #2042ad;
+        padding: 40px 30px 0 20px;
+        position: fixed;
+        height: 100vh;
+        right: 0;
+        width: 475px;
+        transform: translate(1000px, 0px);
+        text-align: right;
+        transition: all .5s ease-in-out;
+    }
+
+    .head-menu ul li {
+        margin-left: 0;
+        margin-bottom: 25px;
+    }
+
+    .head-menu ul li a {
+        font-size: 22px;
+        color: #fff;
+    }
+
+
+
+    .slider_trainers_inner .prev.slick-arrow {
+        left: -10px;
+    }
+
+    .slider_trainers_inner .next.slick-arrow {
+        right: -10px;
+    }
+
+    .footer-menu ul {
+        flex-direction: row;
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 5px;
+    }
+
+    .footer-menu ul li a {
+        margin-left: 14px;
+        font-size: 14px;
+    }
+
+    form.callback-form .сustom-checkbox {
+        margin-left: 0;
+    }
+
+    button.send-button {
+        padding: 14px 24px;
+    }
+
+    .about-banner img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .logo {
+        padding-left: 25px;
+    }
+
+    .article {
+        padding: 0 0px;
+    }
+
+    .video-item {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .videos-block {
+        margin-bottom: 35px;
+    }
+
+    .callback {
+        padding: 20px 25px 20px 25px;
+        max-width: 480px;
+    }
+
+    form.callback-form .custom-input .custom-input__label {
+        max-width: 160px;
+    }
+
+    .our-trainer-info {
+        padding-left: 20px;
+        width: 50%;
+    }
+
+    section.contacts .contacts-info .company p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .footer-menu {
+        margin-top: 30px;
+    }
+
+    .footer-menu ul li a {
+        margin-left: 12px;
+    }
+
+    .footer-logo img {
+        display: flex;
+        object-fit: cover;
+        height: 56px;
+    }
+}
+
+@media (max-width: 880px) {
+
+    section.contacts {
+        margin-bottom: 0;
+    }
+
+    .prof-career-title {
+        display: block;
+        text-align: right;
+    }
+
+    .career-block.vision {
+        display: block;
+        align-items: baseline;
+    }
+
+    .career-block.vision .prof-career-title {
+        display: block;
+    }
+
+    .career-text {
+        overflow: hidden;
+        max-height: 185px;
+        transition: max-height .3s linear;
+    }
+
+    .career-text.more-open {
+        max-height: 100%;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    section.contacts .container {
+        padding: 0;
+    }
+
+    header {
+        padding-top: 0px;
+        padding-bottom: 0;
+    }
+
+    .header .logo {
+        padding-left: 25px;
+    }
+
+    section.main_slider {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    .main_slider-block {
+        margin-bottom: 0px;
+    }
+
+    .next.slick-arrow {
+        right: 25px;
+        bottom: -260px;
+    }
+
+    .prev.slick-arrow {
+        left: 25px;
+        bottom: -260px;
+    }
+
+
+    header .logo a img {
+        height: 60px;
+        width: 220px;
+    }
+
+    .slider-title {
+        font-size: 16px;
+        max-width: 150px;
+        margin-bottom: 14px;
+    }
+
+    .main_slide-info img.slider-logo {
+        width: 230px;
+        height: 58px;
+        display: flex;
+        object-fit: cover;
+        margin-bottom: 32px;
+    }
+
+
+    .slider-subtitle {
+        font-size: 16px;
+        max-width: 200px;
+        line-height: 1.2;
+        font-weight: bold;
+    }
+
+    .main_slider_wrapper .slider_arrows {
+        top: 30%;
+    }
+
+    .main_slide-info {
+        padding-top: 33px;
+        padding-right: 0;
+        align-items: center;
+        z-index: 999;
+    }
+
+    section.welcome h1 {
+        font-size: 25px;
+        margin-bottom: 34px;
+    }
+
+
+    section.welcome img {
+        height: 77px;
+        width: 285px;
+    }
+
+    section.welcome {
+        padding-bottom: 56px;
+        font-size: 33px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+
+    section.trainers {
+        padding-top: 0;
+    }
+
+    section.trainers h1.section-title {
+        font-size: 33px;
+        margin-bottom: 40px;
+    }
+
+    section.trainers p.note {
+        padding: 0 25px;
+        font-weight: 400;
+    }
+
+    section.trainers::after {
+        display: none;
+    }
+
+    a.button {
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .training {
+        border-bottom: none;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+
+    .slider_trainers_inner .slider_arrows {
+        top: 0;
+    }
+
+    .footet-top {
+        flex-direction: column;
+        border-bottom: none;
+    }
+
+    .footer-menu {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-menu ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .footer-menu ul li {
+        margin-bottom: 35px;
+        flex: 0 1 50%;
+    }
+
+    .footer-logo {
+        order: 2;
+    }
+
+    .footer-numbers {
+        flex-direction: column;
+    }
+
+    .footer-bottom {
+        padding-top: 0;
+        margin-top: 35px;
+        border-top: none;
+        margin-bottom: 60px;
+    }
+
+    .footer-menu ul {
+        flex-direction: row;
+    }
+
+
+    .footer-social {
+        margin-left: 117px;
+        justify-content: inherit;
+    }
+
+    .footer-menu ul li a {
+        margin-left: 0;
+    }
+
+    img.main-slide-img {
+        display: flex;
+        width: 100%;
+        height: 405px;
+        object-fit: cover;
+        object-position: 37%;
+    }
+
+    form.callback-form .сustom-checkbox {
+        margin-left: 0;
+        margin-right: 30px;
+    }
+
+    .contacts-block {
+        flex-wrap: wrap;
+    }
+
+    form.callback-form .custom-input {
+        display: flex;
+        align-items: baseline;
+        flex-direction: column;
+    }
+
+    form.callback-form .custom-input .custom-input__label {
+        margin-bottom: 25px;
+    }
+
+    form.callback-form .custom-input .custom-input__input {
+        max-width: 100%;
+    }
+
+    form.callback-form .сustom-checkbox {
+        margin-left: 0;
+    }
+
+    .form-options {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .callback a.attach_file {
+        margin-bottom: 20px;
+    }
+
+    .callback h5.form-title {
+        margin-bottom: 50px;
+    }
+
+    h1.section-title {
+        font-size: 33px;
+        max-width: 270px;
+        margin: 0 auto;
+        overflow: hidden;
+        margin-bottom: 45px;
+    }
+
+
+    .callback {
+        padding: 38px 25px 38px 25px;
+        max-width: 100%;
+    }
+
+    .contacts-info {
+        padding: 30px 25px 0 25px;
+    }
+
+    section.about::after {
+        display: none;
+    }
+
+    .about-banner img {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about-banner {
+        margin-top: 0;
+    }
+
+    section.about {
+        margin-bottom: 15px;
+    }
+
+    .quote {
+        margin-top: 75px;
+        margin-bottom: 85px;
+    }
+
+    .video-item {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+
+    .main_slider_wrapper .next.slick-arrow {
+        right: 25px;
+    }
+
+    .main_slider_wrapper .prev.slick-arrow {
+        left: 25px;
+    }
+
+    .our-trainers-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .our-trainer-info {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .our-trainer-photo {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+@media (max-width: 580px) {
+
+    .section-subtitle p {
+        font-size: 24px;
+    }
+
+    label.attach_file {
+        margin-bottom: 45px;
+    }
+
+    form.callback-form .сustom-checkbox {
+        margin-left: 0;
+        order: 2;
+        margin-bottom: 70px;
+    }
+
+    button.send-button {
+        order: 3;
+        margin: 0 auto;
+    }
+
+    .form-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .head-menu ul.nav {
+        width: 100vw;
+    }
+
+    .crumbs {
+        display: none;
+    }
+
+    section.contacts {
+        padding-top: 50px;
+    }
+
+    section.about {
+        padding-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    .program h3.about-title {
+        font-size: 27px;
+        margin-bottom: 35px;
+    }
+
+    .list-info p {
+        font-size: 18px;
+    }
+
+    .list-info {
+        margin-bottom: 60px;
+    }
+
+    .quote {
+        margin-top: 55px;
+        margin-bottom: 70px;
+    }
+
+    .quote p {
+        font-size: 27px;
+    }
+
+    .quote img {
+        margin-bottom: 38px;
+    }
+
+    .contacts-block {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .contacts-info {
+        padding: 0 25px;
+    }
+
+
+    section.about .section-subtitle {
+        font-size: 25px;
+    }
+
+    section.about img.logo-about {
+        height: 80px;
+        width: 320px;
+        margin-top: 24px;
+    }
+
+    .club-description {
+        padding: 35px 0px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+
+    .videos-block {
+        margin-bottom: 80px;
+    }
+
+    .article {
+        padding: 0;
+    }
+
+    .article p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .attention p {
+        font-size: 27px;
+        padding: 0 20px;
+    }
+
+    h4.title-article {
+        font-size: 27px;
+    }
+
+    .video-item {
+        flex: 0 1 100%;
+    }
+
+    .video-item iframe {
+        height: 240px;
+        margin-bottom: 24px;
+    }
+
+    .container {
+        padding: 0 25px;
+    }
+
+    section.our-trainers {
+        padding-top: 50px;
+    }
+
+    .section-subtitle {
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .our-trainers-item {
+        justify-content: center;
+    }
+
+    .our-trainer-info {
+        padding-left: 0px;
+        width: 100%;
+    }
+
+    .our-trainer-photo {
+        margin-bottom: 50px;
+    }
+
+    .trainer-fio {
+        margin-bottom: 16px;
+    }
+
+    .trainer-position {
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+
+    .bio-text {
+        margin-bottom: 18px;
+    }
+
+    section.welcome {
+        font-size: 25px;
+    }
+
+    .main_slide-info {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 479px) {
+    header .logo a img {
+        height: 55px;
+        width: 55px;
+        object-fit: cover;
+        overflow: hidden;
+        object-position: left;
+    }
+
+    .footer-social {
+        margin-left: 56px;
+        justify-content: inherit;
+    }
+
+    .slider_trainers_inner .prev.slick-arrow {
+        left: -15px;
+    }
+
+    .slider_trainers_inner .next.slick-arrow {
+        right: -15px;
+    }
+
+    .main_slide-info {
+        width: 65%;
+    }
+
+    section.welcome {
+        font-size: 26px;
+    }
+
+    .numbers {
+        width: 75px;
+        height: 75px;
+    }
+
+    .head-menu {
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media (max-width: 374px) {
+
+    .main_slide-info {
+        width: 80%;
+    }
+
+    .footer-social {
+        margin-left: 10px;
+        justify-content: inherit;
+    }
+
+    .head-menu ul li a {
+        font-size: 24px;
+        color: #fff;
+    }
+
+    section.welcome {
+        font-size: 20px;
+    }
+
+    section.welcome img {
+        height: 77px;
+        width: 260px;
+        margin-top: 25px;
+    }
+
+    section.trainers h1.section-title {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    section.trainers {
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    a.button {
+        font-size: 24px;
+    }
+
+    .training {
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .slider_trainers-item {
+        max-width: 270px;
+    }
+
+    .slider_trainers_photo {
+        max-width: 270px;
+    }
+
+    .slick-slide .slider_trainers_photo img {
+        display: flex;
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .trainer_name {
+        margin-bottom: 5px;
+    }
+
+    section.about img.logo-about {
+        height: 80px;
+        width: 260px;
+    }
+
+    section.about .section-subtitle {
+        font-size: 20px;
+    }
+
+    h1.section-title {
+        margin-bottom: 20px;
+    }
+
+    .club-description {
+        font-size: 16px;
+    }
+
+    .list-info p {
+        font-size: 16px;
+    }
+
+    .program h3.about-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .about-banner {
+        padding-bottom: 20px;
+    }
+
+    .quote img {
+        max-height: 60px;
+        margin-bottom: 25px;
+    }
+
+    .quote p {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+
+    .quote-name {
+        font-size: 16px;
+    }
+
+    .quote {
+        margin-bottom: 35px;
+    }
+
+    .videos-block {
+        margin-bottom: 12px;
+    }
+
+    h4.title-article {
+        margin-bottom: 16px;
+    }
+
+    .attention p {
+        font-size: 18px;
+        padding: 0 20px;
+    }
+
+    .attention {
+        padding: 45px 0 45px 0;
+    }
+
+    .section-subtitle {
+        font-size: 22px;
+    }
+
+    h1.section-title {
+        margin-bottom: 25px;
+    }
+
+    .our-trainer-photo {
+        margin-bottom: 30px;
+    }
+
+    h4.trainer-fio {
+        font-size: 30px;
+    }
+
+    .trainer-biography p {
+        font-size: 24px;
+        margin-bottom: 10px;
+        font-weight: 400;
+    }
+
+    .trainer-position {
+        font-size: 16px;
+    }
+}

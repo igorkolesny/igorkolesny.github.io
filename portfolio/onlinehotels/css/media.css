@@ -1,0 +1,661 @@
+@media (max-width: 1440px) {
+
+    .title {
+        font-size: 42px;
+        margin-bottom: 65px;
+    }
+
+    .container {
+        max-width: 1096px;
+    }
+
+    .container-xl {
+        max-width: 1125px;
+    }
+
+    .header-top {
+        max-width: 1095px;
+        padding: 35px 0 0 0;
+    }
+
+    .header-title {
+        padding-top: 194px;
+        padding-bottom: 230px;
+    }
+
+    .header-title .site-title {
+        font-size: 60px;
+        line-height: 72px;
+        margin-bottom: 30px;
+    }
+
+    .header-title .site-desc {
+        margin-bottom: 100px;
+        font-size: 20px;
+    }
+
+    .image-ipad {
+        width: 420px;
+        height: 353px;
+    }
+
+    .image-iphone {
+        position: absolute;
+        right: 10px;
+        width: 156px;
+        bottom: -70px;
+        height: 278px;
+    }
+
+    .benefits-images {
+        max-width: 420px;
+        margin-right: 90px;
+    }
+
+    .module-img {
+        max-width: 340px;
+        max-height: 300px;
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    body {
+        font-size: 14px;
+    }
+
+    header,
+    section {
+        margin-bottom: 70px;
+    }
+
+    header {
+        background-position: top center;
+    }
+
+    .container,
+    .container-xl {
+        max-width: 710px;
+    }
+
+    .title {
+        font-size: 30px;
+        line-height: 28px;
+        margin-bottom: 50px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+
+    a.btn {
+        padding: 12px 22px;
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    input[type="text"], input[type="tel"] {
+        border: 1px solid #FFFFFF;
+        padding: 12px 25px;
+        line-height: 16px;
+        font-weight: 400;
+    }
+
+    .btn-submit {
+        padding: 12px 0;
+    }
+
+    .header-top {
+        max-width: 710px;
+    }
+
+    .header-title {
+        padding-top: 200px;
+        padding-bottom: 257px;
+    }
+
+    .header-title .site-title {
+        font-size: 36px;
+        line-height: 43px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .header-title .site-desc {
+        text-align: center;
+        font-weight: 400;
+        max-width: 440px;
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 35px;
+    }
+
+    .benefits-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .item-icon {
+        max-width: 14px;
+        max-height: 12px;
+        margin-right: 7px;
+    }
+
+    .benefits-images {
+        max-width: 567px;
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .benefits-item {
+        margin-bottom: 15px;
+    }
+
+    .item-desc {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .image-ipad {
+        width: 496px;
+        height: 357px;
+    }
+
+    .image-iphone {
+        position: absolute;
+        right: -65px;
+        width: 172px;
+        bottom: 0;
+        height: 305px;
+    }
+
+    .benefits-list {
+        padding-top: 0;
+    }
+
+    .benefits-item:last-of-type {
+        margin-bottom: 35px;
+    }
+
+    .benefits::before {
+        position: absolute;
+        content: '';
+        width: 427px;
+        height: 836px;
+        background: url('../img/shadow_1_m.png') no-repeat;
+        right: -243px;
+        left: auto;
+        z-index: -1;
+        bottom: -417px;
+    }
+
+    .video-tour::after {
+        position: absolute;
+        content: '';
+        background: url('../img/shadow_2_m.png') no-repeat;
+        width: 538px;
+        height: 642px;
+        right: 0;
+        top: 95px;
+        z-index: -1;
+    }
+
+    .module-img {
+        max-width: 220px;
+        max-height: 190px;
+        margin-bottom: 15px;
+    }
+
+    .module-img img {
+        width: 220px;
+    }
+
+    .module-desc {
+        max-width: 215px;
+        text-align: center;
+        line-height: 20px;
+    }
+
+    .question-number img {
+        width: 40px;
+        object-fit: contain;
+        height: 55px;
+    }
+
+    .question-number {
+        margin-right: 15px;
+    }
+
+    .question-desc {
+        max-width: 150px;
+        line-height: 20px;
+    }
+
+    .questions-block {
+        margin-bottom: 50px;
+    }
+
+    .questions::before {
+        position: absolute;
+        content: '';
+        background: url('../img/shadow_3_m.png') no-repeat;
+        left: 0;
+        bottom: 0;
+        width: 322px;
+        height: 492px;
+        z-index: -1;
+    }
+
+    .consult-banner {
+        padding-top: 40px;
+        padding-bottom: 38px;
+    }
+
+    .consult-banner .title {
+        line-height: 36px;
+        max-width: 508px;
+        margin-bottom: 50px;
+    }
+
+    .callback-form {
+        padding: 0 45px;
+        align-items: baseline;
+    }
+
+    .callback-form input {
+        margin-bottom: 25px;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .callback-form .btn-submit {
+        margin: 0;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    footer .title {
+        margin-bottom: 30px;
+    }
+
+    .footer-block {
+        font-size: 16px;
+    }
+
+    .footer-block a {
+        font-size: 16px;
+    }
+
+    .footer-question {
+        max-width: 100%;
+        line-height: normal;
+        margin-bottom: 30px;
+    }
+
+    .footer-number {
+        margin-bottom: 15px;
+    }
+
+    footer {
+        padding-bottom: 50px;
+    }
+
+    section.arcticle {
+        margin-bottom: 70px;
+    }
+
+    .arcticle .title {
+        margin-bottom: 30px;
+        line-height: 26px;
+    }
+    
+    .article-wrapper a.btn-readmore {
+        text-decoration: none;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    
+    .article-wrapper p {
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 750px) {
+    header,
+    .container,
+    .container-xl {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 32px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .module-img img {
+        width: 190px;
+    }
+
+    .header-title {
+        padding-top: 100px;
+        padding-bottom: 215px;
+    }
+
+    .image-ipad {
+        width: 395px;
+        height: 305px;
+    }
+
+    .image-iphone {
+        right: -47px;
+        width: 140px;
+        height: 240px;
+    }
+
+    .online-module-wrapper {
+        flex-wrap: wrap;
+    }
+
+    .module-img img {
+        width: 212px;
+    }
+
+    .module-item {
+        flex: 1 1 auto;
+        margin-bottom: 35px;
+    }
+
+    .questions-block {
+        flex-wrap: wrap;
+    }
+
+    .questions-item {
+        flex: 0 1 100%;
+        margin-bottom: 25px;
+    }
+
+    .question-desc {
+        max-width: 100%;
+    }
+
+    .question-number img {
+        width: 40px;
+        object-fit: contain;
+        height: 40px;
+    }
+
+    .callback-form {
+        justify-content: center;
+    }
+
+    section.arcticle {
+        margin-bottom: 50px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .article-wrapper p {
+        line-height: 19px;
+    }
+
+}
+
+@media (max-width: 520px) {
+    body {
+        font-size: 12px;
+    }
+
+    a {
+        font-size: 12px;
+        line-height: 28px;
+    }
+
+    a.btn {
+        padding: 12px 16px;
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: 400;
+    }
+
+    header, section {
+        margin-bottom: 50px;
+    }
+
+    input[type="text"], input[type="tel"] {
+        padding: 10px 20px;
+        line-height: 14px;
+    }
+
+    .number a {
+        font-size: 14px;
+        line-height: normal;
+        font-weight: 300;
+    }
+
+    .header-top {
+        padding: 20px 0 0 0;
+    }
+
+    .logo {
+        max-width: 152px;
+    }
+
+    .logo img {
+        width: 100%;
+        object-fit: contain;
+        height: 17px;
+    }
+
+    .header-title .site-title {
+        font-size: 22px;
+        line-height: 26px;
+        margin-bottom: 10px;
+    }
+
+    .header-title {
+        padding-top: 118px;
+        padding-bottom: 104px;
+    }
+
+    .header-title .site-desc {
+        max-width: 230px;
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 30px;
+    }
+
+    .benefits-images {
+        max-width: 531px;
+        margin-bottom: 0;
+        order: 2;
+    }
+
+    .image-ipad {
+        width: 263px;
+        height: 217px;
+    }
+
+    .image-iphone {
+        right: -30px;
+        width: 92px;
+        height: 165px;
+    }
+
+    .benefits-list {
+        margin-bottom: 15px;
+    }
+
+    .item-desc {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .benefits-item:last-of-type {
+        margin-bottom: 20px;
+    }
+
+    .module-desc {
+        max-width: 190px;
+    }
+
+    .module-item:last-child {
+        margin-bottom: 0;
+    }
+
+    .question-desc {
+        line-height: 18px;
+    }
+
+    .questions-block {
+        margin-bottom: 20px;
+    }
+
+    .consult-banner .title {
+        line-height: 24px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .callback-form input {
+        margin-bottom: 20px;
+    }
+
+    .callback-form {
+        padding: 0;
+    }
+
+    .callback-form .btn-submit {
+        max-width: 190px;
+    }
+
+    .consult-banner {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .footer-block {
+        font-size: 12px;
+    }
+
+    .footer-question {
+        margin-bottom: 25px;
+        line-height: 18px;
+    }
+
+    .benefits::before {
+        position: absolute;
+        content: '';
+        width: 268px;
+        height: 472px;
+        background: url('../img/shadow_1_m.png') no-repeat;
+        right: -70px;
+        left: auto;
+        z-index: -1;
+        background-size: contain;
+        opacity: .7;
+        bottom: 190px;
+    }
+
+    .video-tour::after {
+        position: absolute;
+        content: '';
+        background: url('../img/shadow_2_m.png') no-repeat;
+        width: 310px;
+        height: 405px;
+        right: 0;
+        top: -15px;
+        opacity: .7;
+        z-index: -1;
+        background-size: contain;
+    }
+
+
+    .questions::before {
+        position: absolute;
+        content: '';
+        background: url('../img/shadow_3_m.png') no-repeat;
+        left: -100px;
+        bottom: -40px;
+        width: 322px;
+        height: 492px;
+        z-index: -1;
+    }
+
+    #mail-send_succes .mfp-close,
+    #mail-send_error .mfp-close {
+        margin: 20px 20px 0 0;
+        width: 20px;
+        height: 20px;
+        font-size: 34px;
+    }
+
+    #modal1 .mfp-close {
+        margin: 20px 20px 0 0;
+        width: 20px;
+        height: 20px;
+        font-size: 34px;
+    }
+
+    .modal-inner {
+        padding: 5px 20px 36px 20px;
+    }
+
+    #mail-send_succes .modal-inner,
+    #mail-send_error .modal-inner {
+        padding: 5px 15px 0px 15px;
+    }
+    
+
+    .modal-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    .modal-desc {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 33px;
+    }
+
+    #modal1 input {
+        margin-bottom: 20px;
+    }
+
+    #modal1 input[type="text"], #modal1 input[type="tel"] {
+        padding: 10px 20px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #modal1 .btn-submit_orange {
+        padding: 13px 40px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 375px) {
+    .play-btn {
+        width: 70px;
+        height: 70px;
+        top: calc(50% - 35px);
+        left: calc(50% - 35px);
+    }
+
+    .play-btn:after {
+        top: calc(50% - 11px);
+        left: calc(50% - 10px);
+        width: 23px;
+        height: 24px;
+    }
+}
