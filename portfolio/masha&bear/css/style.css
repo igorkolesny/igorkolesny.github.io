@@ -2819,7 +2819,7 @@ body.empty-page {
   position: absolute;
   content: "";
   left: 0;
-  bottom: -15px;
+  bottom: 30%;
   background: url("../img/masha_3.png") no-repeat;
   background-size: cover;
   width: 272px;
@@ -2830,7 +2830,7 @@ body.empty-page {
   position: absolute;
   content: "";
   right: 0;
-  bottom: -25px;
+  bottom: 30%;
   background: url("../img/bear_4.png") no-repeat;
   background-size: cover;
   width: 328px;
