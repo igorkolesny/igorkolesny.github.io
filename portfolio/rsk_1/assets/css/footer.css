@@ -1,0 +1,222 @@
+footer{
+    background: #1B1B1B;
+}
+.footer__min{
+    padding: 40px 0 34px;
+}
+.footer__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__cont{
+    max-width: 218px;
+    width: 100%;
+}
+.footer__logo{
+    display: flex;
+    width: 185px;
+}
+.footer__cont__numb{
+    margin-top: 54px;
+    padding-top: 50px;
+    border-top: 1px solid #292929;
+}
+.footer__cont__numb p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.footer__phone{
+    font-family: 'Europebold';
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    display: block;
+    margin-top: 11px;
+    margin-bottom: 12px;
+}
+.footer__messages{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    color: #959595;
+}
+.footer__messages svg{
+    margin-right: 12px;
+}
+.footer__messages:hover svg path{
+    stroke: #FFDD00;
+}
+.footer__messages:hover {
+    color: #FFDD00;
+}
+
+.footer__messages span{
+
+    border-bottom: 1px dashed rgba(149,149,149,0.5);
+
+}
+.footer__messages:hover span{
+    border-bottom: 1px dashed #FFDD00;
+}
+.time-works{
+    margin-top: 31px;
+}
+.time-works span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.time-works p{
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+.time-works p strong{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: block;
+    margin-right: 5px;
+}
+
+.footer__info{
+    display: flex;
+    align-items: flex-start;
+    margin-top: 55px;
+}
+.footer__href + .footer__href{
+    margin-left: 153px;
+}
+.footer__href strong{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.footer__href ul{
+    margin-top: 19px;
+}
+.footer__href ul li{
+    margin-bottom: 10px;
+}
+.footer__href ul li a{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #959595;
+    transition: 0.3s;
+}
+.footer__href ul li a:hover{
+    color: #FFFFFF;
+}
+.cost__zak{
+    margin-top: 60px;
+}
+.calculate__cost{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    display: flex;
+    width: max-content;
+    border-bottom: 1px dashed rgba(149,149,149,0.5);
+    margin-top: 18px;
+}
+.cost__zak__soc{
+    margin-top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cost__zak__soc a{
+    width: 73px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.cost__zak__soc a:hover span{
+    display: none;
+}
+.cost__zak__soc a:hover svg path{
+    fill: #1B1B1B;
+}
+.footer__about__pages{
+    margin-top: 62px;
+    border-top: 1px solid #292929;
+    padding-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__about__fl{
+    display: flex;
+    align-items: center;
+}
+.footer__about__fl p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    opacity: 0.4;
+}
+.footer__about__hr{
+    display: flex;
+    align-items: center;
+}
+
+.footer__about__hr a{
+    margin-left: 34px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    border-bottom: 1px dashed rgba(255,255,255,0.3);
+    transition: 0.3s;
+}
+.footer__about__hr a:hover{
+    border-bottom: 1px dashed rgba(255,255,255,1);
+}
+.footer__soc ul{
+    display: flex;
+    align-items: center;
+}
+.footer__soc ul li{
+    margin-left: 4px;
+}
+.footer__soc ul li a{
+    width: 43px;
+    height: 43px;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.footer__soc ul li a:hover{
+    background: #FFDD00;
+    border: 1px solid #FFDD00;
+
+}
+.footer__soc ul li a svg path{
+    fill: #FFFFFF;
+}
+.footer__soc ul li a:hover svg path{
+    fill: #1B1B1B;
+}

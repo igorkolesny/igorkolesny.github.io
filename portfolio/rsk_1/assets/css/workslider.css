@@ -1,0 +1,222 @@
+.big-work-slider .slick-slider {
+    border-top-right-radius: 8px;
+    overflow: hidden;
+}
+
+
+.big-work-slider.slick-initialized.slick-slider {
+    /*overflow: hidden;*/
+    border-radius: 10px;
+}
+
+
+.small-work-slider-container {
+    width: 71px;
+    position: absolute;
+    background: red;
+    top: 0;
+    right: 0;
+    height: 86%;
+    border-radius: 0px 10px 10px 0;
+    background: #1b1b1b;
+    max-height: 543px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-work-slider-container .small-item {
+    position: relative;
+    display: flex;
+    border-radius: 6px;
+    margin: 10px auto;
+    width: 51px;
+    height: 51px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.small-work-slider-container .small-item img {
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*.small-work-slider-container .small-item:hover {
+    border-radius: 6px;
+    border: 2px solid #FFDD00;
+    transition: none;
+}*/
+
+
+.small-work-slider-container .small-item:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    border-radius: 6px;
+    border: 2px solid #FFDD00;
+}
+
+.small-work-slider-container .slick-list.draggable {
+    padding: 10px;
+    height: 490px;
+    max-height: 490px;
+}
+
+.slider-work-container {
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+    max-width: 1200px;
+}
+
+.slider-work-container .big-item img {
+    display: block;
+    height: 630px;
+    max-width: 1190px;
+    border-radius: 10px;
+}
+
+.work_page-slider-btn:before {
+content: "";
+position: absolute;
+top: -43px;
+right: -1px;
+background: #ffffff;
+width: 214px;
+height: 88px;
+border-radius: 12px 0 0 0;
+}
+
+.work_page-slider-btn {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+.small-slider-arrow-next.slick-arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.small-slider-arrow-prev.slick-arrow {
+    display: none;
+}
+
+
+.small-slider-arrow-next.slick-arrow::after {
+    content: '';
+    background-image: url('../img/arrd5.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 10px;
+    height: 15px;  
+}
+
+.small-slider-arrow-next.slick-arrow:hover {
+    border: 1px solid #FFDD00;
+    background: unset;
+    cursor: pointer;
+}
+
+.small-work-slider-container .slick-current:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 47px;
+    height: 47px;
+    border-radius: 6px;
+    border: 2px solid #FFDD00;
+    transition: 0.3s;
+}
+
+
+.slider-work-container .slick-dots li button {
+    font-size: 0;
+    position: absolute;
+    top: 50%;
+    transform: none;
+    left: 0;
+    right: 0;
+    width: 51px;
+    height: 3px;
+    margin: auto;
+    content: '';
+    text-align: center;
+    opacity: .2;
+    color: #d13838;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-border-radius: 50%;
+    border-radius: 0;
+    background-color:  #1B1B1B;
+}
+
+.slider-work-container .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 51px;
+    height: 3px;
+    margin: 0px 8px;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slider-work-container .slick-dots li.slick-active button {
+    background: #FFDD00;
+    opacity: 1;
+    color: rgb(255 5 5);
+}
+
+.slider-work-container .slick-dots {
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+.small-item.slick-slide {
+    max-width: 51px;
+    max-height: 51px;
+    min-width: 51px;
+    min-height: 51px;
+}
+
+
+@media (max-width: 575px) {
+    .slider-work-container .big-item img {
+        display: block;
+        height: 315px;
+        border-radius: 10px;
+        max-width: 345px;
+    }
+
+    .small-work-slider-container {
+        display: none;
+    }
+
+    .work_page-slider-btn {
+        display: none;
+    }
+
+}

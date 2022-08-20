@@ -1,0 +1,141 @@
+.custom-select {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.houses_select {
+    margin-bottom: 0;
+}
+
+.select-css {
+    border: 1px solid #818285;
+	border-radius: 8px;
+	background: #fff;
+	padding: 12px 16px;
+	font-size: 14px;
+	font-weight: normal;
+	line-height: 24px;
+	color: #818285;
+	max-width: 692px;
+	width: 100%;
+	margin-bottom: 0px;
+	display: block;
+	box-sizing: border-box;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+	z-index: 10;
+} 
+
+
+.select-css::-ms-expand {
+	display: none;
+}
+.select-css:hover {
+	border-color: #888;
+}
+.select-css:focus {
+	border: 1px solid #FF502F; 
+	color: #222;
+	outline: none;
+}
+.custom-select-icons {
+	position: absolute;
+	top: 0.5em;
+	right: 0.5em;
+	z-index: 20;
+	border: 1px solid white;
+	background: transparent;
+}
+
+.custom-select-options {
+	box-shadow: 2px 2px 40px rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	line-height: 1.5;
+	margin: 0;
+	/* margin-top: -0.5em; */
+	padding: 0;
+	list-style-type: none;
+	font-weight: normal;
+	cursor: pointer;
+	z-index: 2;
+	position: absolute;
+	width: 100%;
+	background-color: #ffffff;
+	max-width: 692px;
+	overflow-y: scroll;
+	max-height: 408px;
+}
+
+.custom-select-options li {
+	padding: 1em;
+}
+.custom-select-options li:hover {
+	background: #efefef;
+	color: #000;
+	border: none;
+	border-width: 0 0 0 1px;
+}
+
+.custom-select-options li:hover:first-child {
+	background: #efefef;
+	color: #000;
+	border: none;
+	border-top-left-radius: 8px;
+	border-width: 0 0 0 1px;
+}
+
+.custom-select-options li:hover:last-child {
+	background: #efefef;
+	color: #000;
+	border: none;
+    border-bottom-left-radius: 8px;
+    border-width: 0 0 0 1px;
+}
+
+.custom-select-options li:focus {
+	border: none;
+}
+
+.icon {
+		fill: ButtonText;
+		pointer-events: none;
+	}
+@media screen and (-ms-high-contrast: active) {
+	.icon {
+		fill: ButtonText;
+	}
+}
+.hidden-all {
+	display: none;
+}
+.hidden-visually {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	white-space: nowrap;
+	-webkit-clip-path: inset(50%);
+	clip-path: inset(50%);
+	border: 0;
+}
+
+
+@media (max-width: 768px) {
+    .select-css {
+        max-width: 768px;
+        width: 100%;
+    }
+
+    .custom-select-options {
+        width: 100%;
+        max-width: 768px;
+    }
+
+    .custom-select {
+        margin-bottom: 40px;
+    }
+}

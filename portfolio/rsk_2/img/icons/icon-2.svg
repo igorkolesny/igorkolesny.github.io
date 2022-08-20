@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="100%" height="100%" viewBox="0 0 265 261" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect x="2.083" y="2.083" width="260.756" height="162.094" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M94.599,50.756l75.729,-0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M76.517,83.13l111.476,0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M34.378,58.138l-0,-22.84l21.997,0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M34.378,109.691l-0,22.84l21.997,-0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M230.549,58.138l0,-22.84l-21.997,0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <path d="M230.549,109.691l0,22.84l-21.997,-0" style="fill:none;stroke:#000;stroke-width:4.17px;"/>
+    <circle cx="131.935" cy="164.448" r="48.943" style="stroke-width: 4.17px; fill: rgb(255, 217, 39); stroke: rgb(255, 217, 39);"/>
+    <circle cx="131.768" cy="164.177" r="17.935" style="fill: none; stroke-width: 4.17px; stroke: rgb(255, 217, 39);"/>
+    <path d="M99.92,201.456l-0.114,57.088l32.658,-16.946l31.459,16.409l0.041,-56.564" style="fill: none; stroke-width: 4.17px; stroke: rgb(255, 217, 39);"/>
+  </g>
+</svg>

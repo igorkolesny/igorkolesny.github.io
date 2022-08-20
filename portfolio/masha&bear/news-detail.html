@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Masha & Bear</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="news-detail">
+
+  <div class="preloader">
+            
+    <div class="preloader__row">
+      <div class="preloader__item">
+          <div class="preloader-logo">
+              <img src="img/logo.png" alt="">
+          </div>
+      </div>
+      <div class="preloader__item">
+          <div class="preloader-loading-bar"></div>
+          <div class="preloader-loading-percent">
+              <span class="loaded-percent">100</span>
+              <span>%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <header>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header-top">
+               
+                <div class="button-header buttons choose-language">
+                    <div class="button-header-box">
+                        <div class="button-header-inner">
+                            <img src="img/russia.svg" alt="" class="button-header-image">
+                            <div class="button-header-text">
+                               русский язык
+                            </div>
+                        </div>
+                    </div>
+                    <a data-fancybox href="#modal2" class="arrow-button-small-2 buttons but-chooselng">
+                        <div class="arrow-button-small-2-box">
+                          <div class="arrow-button-small-2-inner">
+                                      <div class="arrow-button-small-2-text">
+                                          выбрать другой
+                                      </div>
+                          </div>
+                      </div>
+                      </a>
+                </div>
+
+
+                <div class="open-top-lng">
+                    <span>
+                       <a data-fancybox="" href="#modal2" class="tv-item">рус</a> 
+                    </span>
+                </div>
+                
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt=""></a>
+                </div>
+
+
+                <div class="open-top-menu">
+                    <span></span>
+                </div>
+
+                <a href="" class="button-header buttons location-btn">
+                    <div class="button-header-box">
+                        <div class="button-header-inner">
+                            <img src="img/location.svg" alt="" class="button-header-image">
+                            <div class="button-header-text">
+                               <span>Мир</span> 
+                               маши и медведя
+                            </div>
+                            
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="header-menu">
+                <ul class="world-menu">
+                    <li class="menu-item">
+                        <a href="#" class="button-header-menu buttons mults">
+                            <div class="button-header-menu-box">
+                                <div class="button-header-menu-inner">
+                                    <img src="img/film.svg" alt="" class="button-header-menu-image">
+                                    <div class="button-header-menu-text">
+                                      МУЛЬТИКИ 
+                                    <span>Тут интересненько</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="menu-item news">
+                        <a href="#" class="button-header-menu buttons news-but">
+                            <div class="button-header-menu-box">
+                                <div class="button-header-menu-inner">
+                                    <img src="img/plane.svg" alt="" class="button-header-menu-image">
+                                    <div class="button-header-menu-text">
+                                        Новости 
+                                    <span>Тут все очень важно</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-item games">
+                        <a href="#" class="button-header-menu buttons games-but">
+                            <div class="button-header-menu-box">
+                                <div class="button-header-menu-inner">
+                                    <img src="img/play.svg" alt="" class="button-header-menu-image">
+                                    <div class="button-header-menu-text">
+                                        Игры
+                                    <span>Тут весело и забавно</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu-item shop">
+                        <a href="#" class="button-header-menu buttons shop-but">
+                            <div class="button-header-menu-box">
+                                <div class="button-header-menu-inner">
+                                    <img src="img/cart.svg" alt="" class="button-header-menu-image">
+                                    <div class="button-header-menu-text">
+                                        Магазин
+                                    <span>Тут все игрушки</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="mobile-world-add">
+                        <a href="" class="button-header buttons location-btn">
+                            <div class="button-header-box">
+                                <div class="button-header-inner">
+                                    <img src="img/location.svg" alt="" class="button-header-image">
+                                    <div class="button-header-text">
+                                       <span>Мир</span> 
+                                       маши и медведя
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs-wrap">
+                <a href="index.html" class="crumb-page">Главная</a>
+                    <div class="breadcrumbs-arrow">
+                        <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.84016 4.37367L6.22881 7.84646C6.12572 7.94559 5.98832 8 5.84182 8C5.69516 8 5.55784 7.94551 5.45475 7.84646L5.12687 7.53108C5.02386 7.43211 4.96711 7.29991 4.96711 7.15895C4.96711 7.01807 5.02386 6.88142 5.12687 6.78244L7.23368 4.75206L0.540239 4.75206C0.238453 4.75206 -3.03805e-07 4.52487 -3.29182e-07 4.23459L-3.6816e-07 3.78874C-3.93537e-07 3.49846 0.238453 3.24837 0.540239 3.24837L7.25758 3.24837L5.12695 1.20665C5.02394 1.10752 4.96719 0.978911 4.96719 0.837955C4.96719 0.697155 5.02394 0.566674 5.12695 0.467621L5.45483 0.153265C5.55792 0.0541334 5.69524 0.000112036 5.8419 0.000112023C5.98841 0.00011201 6.1258 0.0548367 6.22889 0.153967L9.84024 3.62667C9.94358 3.72612 10.0004 3.85886 10 3.99998C10.0003 4.14156 9.94358 4.27438 9.84016 4.37367Z" fill="white"/>
+                        </svg>                    
+                    </div>
+                <a href="" class="crumb-page">Новости</a>
+                <div class="breadcrumbs-arrow">
+                    <svg width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.84016 4.37367L6.22881 7.84646C6.12572 7.94559 5.98832 8 5.84182 8C5.69516 8 5.55784 7.94551 5.45475 7.84646L5.12687 7.53108C5.02386 7.43211 4.96711 7.29991 4.96711 7.15895C4.96711 7.01807 5.02386 6.88142 5.12687 6.78244L7.23368 4.75206L0.540239 4.75206C0.238453 4.75206 -3.03805e-07 4.52487 -3.29182e-07 4.23459L-3.6816e-07 3.78874C-3.93537e-07 3.49846 0.238453 3.24837 0.540239 3.24837L7.25758 3.24837L5.12695 1.20665C5.02394 1.10752 4.96719 0.978911 4.96719 0.837955C4.96719 0.697155 5.02394 0.566674 5.12695 0.467621L5.45483 0.153265C5.55792 0.0541334 5.69524 0.000112036 5.8419 0.000112023C5.98841 0.00011201 6.1258 0.0548367 6.22889 0.153967L9.84024 3.62667C9.94358 3.72612 10.0004 3.85886 10 3.99998C10.0003 4.14156 9.94358 4.27438 9.84016 4.37367Z" fill="white"/>
+                    </svg>                    
+                </div>
+                <a href="" class="crumb-page current-page">Заголовок проcматриваемой новости</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="detail-news">
+        <div class="container">
+            <h2 class="section-title detail-mobile-title">Заголовок <span>просматриваемой новости</span></h2>
+            <div class="detail-news-wrapper">
+                <div class="detail-image">
+                    <img src="img/video-bg.png" alt="" class="detail-img">
+                </div>
+
+                <div class="detail-news-content">
+                    <div class="detail-news-desc">
+                        <div class="detail-news-top">
+                        <div class="detail-news-title">Заголовок</div> 
+                            <div class="detail-news-subtitle">просматриваемой новости</div>
+                        </div>
+                        <div class="detail-news-article">
+                            <p>
+                                Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет.
+                                <br><br>
+                                Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет.
+                                <br><br>
+                                Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <section class="news-else">
+        <div class="container">
+            <h2 class="section-title">
+               ещё новости
+            </h2>
+
+
+            <div class="news-content">
+
+                <div class="news-item">
+                    <a href="#">
+                        <div class="news-block">
+                            <div class="news-image">
+                                <img src="img/video-bg.png" alt="" class="news-img">
+                            </div>
+                            <div class="news-article">
+                                <div class="news-title">Заголовок новости</div>
+                                <div class="news-info">Просмотров: 555 677</div>
+                                <div class="news-text">
+                                    Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="arrow-button-small-1 buttons but-more">
+                      <div class="arrow-button-small-1-box">
+                          <div class="arrow-button-small-1-inner">
+                              <div class="arrow-button-small-1-text">
+                                  подробнее
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+
+                </div>
+                <div class="news-item">
+                    <a href="#">
+                        <div class="news-block">
+                            <div class="news-image">
+                                <img src="img/video-bg.png" alt="" class="news-img">
+                            </div>
+                            <div class="news-article">
+                                <div class="news-title">Заголовок новости</div>
+                                <div class="news-info">Просмотров: 555 677</div>
+                                <div class="news-text">
+                                    Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="arrow-button-small-1 buttons but-more">
+                      <div class="arrow-button-small-1-box">
+                          <div class="arrow-button-small-1-inner">
+                              <div class="arrow-button-small-1-text">
+                                  подробнее
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+
+                </div>
+                <div class="news-item">
+                    <a href="#">
+                        <div class="news-block">
+                            <div class="news-image">
+                                <img src="img/video-bg.png" alt="" class="news-img">
+                            </div>
+                            <div class="news-article">
+                                <div class="news-title">Заголовок новости</div>
+                                <div class="news-info">Просмотров: 555 677</div>
+                                <div class="news-text">
+                                    Медведь трудится в огороде. Зайчик помогает, предлагает посадить морковку. Откуда ни возьмись появляется Маша. Посмотрела как работают. Морковка выросла на славу. Медведь спокойно спит и снится ему сон, как будто любуется морковкой и вдруг зайка побывал в огороде… Медведь решил сторожить морковку, но очень хочется спать. А зайка не дремлет.
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="arrow-button-small-1 buttons but-more">
+                      <div class="arrow-button-small-1-box">
+                          <div class="arrow-button-small-1-inner">
+                              <div class="arrow-button-small-1-text">
+                                  подробнее
+                              </div>
+                          </div>
+                      </div>
+                  </a>
+
+                </div>
+            
+            </div>
+
+            <a href="#" class="link more-news">Все новости</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="masha-2"></div>
+        <div class="footer-box">
+            <div class="container">
+                <h3 class="footer-title">давай дружить</h2>
+                <div class="footer-wrapper">
+                    <form action="subscribe.php" method="post" class="subscribe-form">
+
+                        <div class="form-inputs">
+                            <div class="custom-input">
+                                <input type="text" name="email" class="email" placeholder="Укажи свой e-mail" required>
+                            </div>
+
+                            <button type="submit" class="arrow-button-large buttons but-subscribe">
+                                <div class="arrow-button-lagre-box">
+                                    <div class="arrow-button-large-inner">
+                                        <img src="img/plane.svg" alt="" class="arrow-button-large-image">
+                                                <div class="arrow-button-large-text">
+                                                    подписаться
+                                                </div>
+                                    </div>
+                                </div>
+                            </button>
+
+                        </div>
+                        <div class="footer-politics">
+                            <label class="basic-checkbox">
+                                <input type="checkbox" class="basic-checkbox__input" required="">
+                                <span class="basic-checkbox__style"></span>
+                            </label>
+                            <p class="basic-checkbox__text">
+                                Я даю свое согласие на получение мной рассылок в соответствии с <a href="#">пользовательским соглашением</a> и <a href="#">политикой конфиденциальности сайта</a>
+                            </p>
+                        </div>
+
+                    </form>
+                    <div class="footer-info-box">
+                        <div class="footer-info">
+                            <div class="footer-info-text">
+                                Просто укажи свою почту и мы будем присылать тебе уведомления о наших новостях и мероприятиях. Ты всегда сможешь отписаться от рассылки, если не захочешь больше получать уведомления.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+     
+            <div class="footer-image">
+                <div class="footer-copyright">© Анимаккорд ЛТД, 2008-2022</div>
+                <img src="img/footer-img.png" alt="" class="footer-img">
+            </div>
+        </div>
+        
+    </footer>
+
+
+    <div style="display: none;" id="modal1" class="modal-subscribe">
+       <div class="modal1-inner">
+           <div class="modal1-image-block">
+               <div class="modal1-image">
+                   <img src="img/modal1-img.jpg" alt="">
+               </div>
+           </div>
+           <div class="modal1-info-block">
+               <div class="modal1-info">
+                   <div class="modal1-text">
+                        <div class="modal1-title">Спасибо
+                           <span>за подписку!</span> 
+                        </div>
+                        <div class="modal1-desc">
+                            Уже пишу тебе письмецо, 
+                            Посмотри у себя на почте!
+                        </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+
+    <div style="display: none" id="modal2" class="select-language">
+        <form method="GET" action="">
+          <div class="modal2-inner">
+            <div class="modal2-content">
+              <div class="modal2-current-lng">
+                <img
+                  src="img/russia.svg"
+                  alt=""
+                  class="modal2-current-lng-flag"
+                />
+                <div class="modal2-current-lng-name">Русский язык</div>
+              </div>
+              <div class="modal2-list-lng">
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/france.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                  
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/germany.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/poland.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/spain.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img
+                    src="img/united-arab-emirates.svg"
+                    alt=""
+                    class="flag-lng"
+                  />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/united-kingdom.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/russia.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/united-states.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+                <div class="modal2-list-lng-item">
+                 
+                  <label class="language-checkbox">
+                    <input type="radio" class="language-checkbox__input" value="5" name="language">
+                    <span class="language-checkbox__style"></span>
+                    <img src="img/mexico.svg" alt="" class="flag-lng" />
+                </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="arrow-button-large buttons but-submit-lng">
+            <div class="arrow-button-lagre-box">
+              <div class="arrow-button-large-inner">
+                <div class="arrow-button-large-text">выбрать</div>
+              </div>
+            </div>
+          </button>
+        </form>
+    </div>
+
+     <div style="display: none;" id="modal3" class="mult-view">
+        <div class="mult-wrapper">
+            <div class="mult-view-left">
+                <div class="mult-view-close">
+                        <span></span>
+                </div>
+
+                <div class="mult-view-slider">
+                    <div class="mult-view-slider-item">
+                        <div class="mult-view-left-top">
+                            <div class="mult-series-name">Что-нибудь вкусненькое</div>
+                            <div class="mult-series-number">серия 79</div>
+                        </div>
+                        <div class="mult-full">
+                            <iframe src="https://www.youtube.com/embed/PCVnvTJkwNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="mult-view-slider-item">
+                        <div class="mult-view-left-top">
+                            <div class="mult-series-name">Что-нибудь вкусненькое</div>
+                            <div class="mult-series-number">серия 79</div>
+                        </div>
+                        <div class="mult-full">
+                            <iframe src="https://www.youtube.com/embed/PCVnvTJkwNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="mult-view-slider-item">
+                        <div class="mult-view-left-top">
+                            <div class="mult-series-name">Что-нибудь вкусненькое</div>
+                            <div class="mult-series-number">серия 79</div>
+                        </div>
+                        <div class="mult-full">
+                            <iframe src="https://www.youtube.com/embed/PCVnvTJkwNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="mult-view-slider-item">
+                        <div class="mult-view-left-top">
+                            <div class="mult-series-name">Что-нибудь вкусненькое</div>
+                            <div class="mult-series-number">серия 79</div>
+                        </div>
+                        <div class="mult-full">
+                            <iframe src="https://www.youtube.com/embed/PCVnvTJkwNE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mult-view-right">
+                <div class="mult-view-nav">
+
+                    <div class="prev-arrow mult-view-arrow-prev">
+                        <img src="img/prev.svg" alt="">
+                    </div>
+        
+                    <div class="mult-view-nav-slider">
+                         <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                        <div class="mult-view-nav-item">
+                            <a href="javascript:;" class="most-popular-item" data-toggle="modal">
+                                <div class="most-popular-item__image-wrp">
+                                    <img src="img/video-preview.png" alt="" class="most-popular-item__image">
+                                </div>
+                                <span class="most-popular-item__number">серия 79</span>
+                                <span class="most-popular-item__name">Что-нибудь вкусненькое</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="next-arrow mult-view-arrow-next">
+                        <img src="img/next.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+     </div>
+
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

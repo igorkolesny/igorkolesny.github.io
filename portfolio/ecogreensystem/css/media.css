@@ -1,0 +1,713 @@
+@media (max-width: 1300px) {
+    .container,
+    .container-s {
+        padding: 0 16px;
+    }
+
+    .main-slider-image {
+        max-width: 340px;
+        margin-right: 20px;
+    }
+
+    .main-slider-item.slick-slide {
+        padding: 250px 30px;
+    }
+
+    .main-slider-info {
+        margin-bottom: 70px;
+    }
+
+    .banner-questions {
+        background: url('../img/banner.jpg') no-repeat top;
+        padding: 60px 0 100px 0;
+    }
+
+    .questions-main {
+        max-width: 580px;
+        margin-right: 0px;
+    }
+
+    .about-image {
+        max-width: 460px;
+    }
+
+    .about-info {
+        margin-right: 0;
+    }
+
+    .howto-wrapper-left {
+        padding: 136px 50px;
+    }
+
+    .block-green {
+        padding: 136px 50px 128px 45px;
+    }
+
+    .footer-nav {
+        margin-bottom: 32px;
+        max-width: 495px;
+    }
+
+    .footer-menu li {
+        max-width: 245px;
+    }
+
+    .categories-wrapper .product-item {
+        width: 32%;
+    }
+
+    /* filter */
+
+    .sidebar-left {
+        margin-bottom: 20px;
+        /* max-width: 260px; */
+        width: 25%;
+    }
+
+    .cat-content {
+        /* max-width: 405px; */
+        width: 72%;
+    }
+
+    .cat-card {
+        width: 48%;
+        padding: 17px 27px;
+    }
+
+    .cat-btns .btn {
+        margin-bottom: 5px;
+    }
+
+    .cat-card.slick-slide {
+        margin-right: 12px;
+        max-width: 355px !important;
+        padding: 24px 20px !important;
+    }
+
+    .item-full-wrapper {
+        align-items: flex-start;
+    }
+
+    .item-full-img {
+        width: 42%;
+    }
+
+    .item-full-info {
+        width: 54%;
+    }
+
+    
+    .article-item {
+        width: 32%;
+    }
+
+    .tech-art-image {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .gallery-item {
+        width: 30%;
+    }
+
+    .contacts-info {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .container {
+        max-width: 1290px;
+        padding: 0 16px;
+    }
+
+    .header-callback {
+        display: none;
+    }
+
+    .header-wrapper {
+        padding: 20px 22px 20px 0;
+    }
+
+    header::after {
+        display: none;
+    }
+
+    .header-menu {
+        position: absolute;
+        background: #fff;
+        padding: 20px;
+        top: 0;
+        transform: translate(1000px, 116px);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 3;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 100vh;
+        width: 480px;
+        font-size: 22px;
+        transition: all .4s ease-out;
+    }
+
+    .header-menu>li>a {
+        padding: 15px;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .title {
+        font-size: 22px;
+        line-height: 33px;
+    }
+
+    .arrow-prev,
+    .arrow-next {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-slider-block {
+        width: 100%;
+        /* max-width: 375px; */
+    }
+
+    .main-slider-title {
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .main-item-inner {
+        flex-direction: row;
+    }
+
+    .main-slider-item.slick-slide {
+        padding: 69px 0 114px 0;
+    }
+
+    .main-slider-image {
+        position: static;
+        z-index: -1;
+        display: flex;
+        top: 40px;
+        justify-content: center;
+        margin-right: 0;
+    }
+
+    .main-slider-image img {
+        width: 80%;
+        object-fit: contain;
+    }
+
+    .main-slider-desc {
+        align-items: flex-start;
+        text-align: left;
+        padding: 0 16px;
+    }
+
+    .main-slider-info {
+        margin-bottom: 70px;
+    }
+
+    .main-slider-dots {
+        padding-bottom: 38px;
+        justify-content: center;
+        padding-left: 10px;
+    }
+
+    .main-slider {
+        position: relative;
+        margin-bottom: 83px;
+    }
+
+
+    .prod-slider-item {
+        max-width: 345px !important;
+        margin-right: 26px;
+    }
+
+    .products-wrapper .slick-list.draggable {
+        overflow: inherit;
+    }
+
+    .produsts {
+        margin-bottom: 53px;
+    }
+
+    .services {
+        background: #fff;
+        padding: 80px 0 50px 0;
+    }
+
+
+    .services-wrapper {
+        justify-content: space-between;
+    }
+
+    .sevices-item {
+        margin-bottom: 25px;
+    }
+
+    .services .title {
+        margin-bottom: 25px;
+    }
+
+    .banner-questions {
+        padding: 60px 0 87px 0;
+        z-index: 0;
+        margin-bottom: 0px;
+        background-size: cover;
+    }
+
+    .questions-main {
+        max-width: 480px;
+        margin-bottom: 68px;
+        margin-right: 0;
+    }
+
+    .questions-main .title {
+        margin-bottom: 45px;
+    }
+
+    .banner-contacts-btn {
+        margin-top: 60px;
+        flex-wrap: wrap;
+        max-width: 280px;
+    }
+
+    .banner-contacts-btn .btn-contact {
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    .btn-contact svg {
+        flex-shrink: 0;
+    }
+
+    .about {
+        background: #fff;
+        margin-bottom: 0px;
+        padding-top: 86px;
+        padding-bottom: 46px;
+    }
+
+    .about-info {
+        margin-right: 0px;
+        margin-bottom: 124px;
+    }
+
+    .about-image {
+        display: none
+    }
+
+    .about-stats {
+        background: none;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .about-stats::before {
+        display: none;
+    }
+
+    .stat-item {
+        max-width: 164px;
+        margin-bottom: 40px;
+    }
+
+    .stat-item p {
+        max-width: 164px;
+    }
+
+    .howto-wrapper-left {
+        max-width: 50%;
+
+        padding: 80px 16px;
+
+        justify-content: flex-start;
+    }
+
+    .block-black .banner-contacts-btn {
+        display: flex;
+        margin-top: 130px;
+    }
+
+    .howto-wrapper-right {
+        max-width: 50%;
+    }
+
+    .block-green {
+        padding: 82px 16px 80px 16px;
+    }
+
+    .howto-work {
+        margin-bottom: 0px;
+    }
+
+    .parthners {
+        padding-top: 60px;
+        background: #fff;
+        margin-bottom: 0px;
+    }
+
+    .team {
+        padding-top: 40px;
+        background: #fff;
+        margin-bottom: 28px;
+    }
+
+    .team-info {
+        max-width: 50%;
+        margin-right: 0;
+    }
+
+    .team-info .title {
+        margin-bottom: 48px;
+    }
+
+    .team-leader {
+        border-top: 1px solid #F2F2F2;
+        border-bottom: 1px solid #F2F2F2;
+        padding: 24px 0;
+        margin-bottom: 32px;
+    }
+
+    .leader-name {
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    .team-desc {
+        margin-bottom: 54px;
+    }
+
+    .team-image {
+        order: 3;
+        margin: 0 auto;
+    }
+
+
+    .team-call {
+        margin-bottom: 60px;
+    }
+
+    .team-call,
+    .team-call .btn {
+        max-width: 50%;
+        width: 100%;
+        order: 3;
+    }
+
+    .desc-title,
+    .team-call p {
+        max-width: 265px;
+    }
+
+    .reviews {
+        margin-bottom: 102px;
+    }
+
+    .reviews-arrows .btn.review-call {
+        display: none;
+    }
+
+    .reviews-head {
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .reviews-head .title {
+        max-width: 208px;
+    }
+
+    .reviews-slider {
+        margin-bottom: 40px;
+    }
+
+    .review-item {
+        max-width: 430px;
+        width: 100%;
+        padding: 16px;
+        margin-right: 20px;
+        background: #fff;
+        border-radius: 2px;
+    }
+
+    .reviews .btn {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .review-rating {
+        display: none;
+    }
+
+    .people-name {
+        text-transform: uppercase;
+    }
+
+    .review-text {
+        margin-bottom: 18px;
+    }
+
+    .review-attach {
+        flex-wrap: wrap;
+        line-height: 140%;
+    }
+
+    .review-whois {
+        max-width: 100%;
+        order: 1;
+        width: 100%;
+    }
+
+    .review-date {
+        order: 2;
+    }
+
+    .footer-logo {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-contacts {
+        margin-bottom: 40px;
+    }
+
+    footer .btn.order-call {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-end {
+        background: none;
+        padding: 0 0 27px 0;
+        margin-top: 50px;
+    }
+
+    .copyright {
+        max-width: 290px;
+        line-height: 150%;
+    }
+
+    /* categories */
+
+    .categories-wrapper .product-item {
+        width: 30.5%;
+    }
+
+    /* filter */
+
+    .sidebar-left {
+        margin-bottom: 20px;
+        /* max-width: 260px; */
+        width: 25%;
+    }
+
+    .cat-content {
+        /* max-width: 405px; */
+        width: 70%;
+    }
+
+    /* .cat-card {
+        width: 48%;
+        padding: 17px 27px;
+    } */
+
+    .cat-btns .btn {
+        width: 48%;
+        padding: 16px 0px;
+    }
+
+    .cat-card.slick-slide {
+        max-width: 322px !important;
+    }
+
+    .article-title {
+        font-size: 20px;
+    }
+
+    .technology-wrapper {
+        justify-content: space-between;
+    }
+
+    .technology-item {
+        width: 48%;
+        margin-right: 0px;
+    }
+
+    .technology-name {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 780px) {
+    .main-slider-image {
+        position: absolute;
+        margin-right: 0;
+    }
+
+    .main-item-inner {
+        flex-direction: column;
+    }
+
+    .main-slider-dots {
+        justify-content: flex-start;
+    }
+
+    .howto-wrapper-left {
+        max-width: 100%;
+    }
+ 
+    .howto-wrapper-right {
+        max-width: 100%;
+    }
+
+    .team-info {
+        max-width: 100%;
+    }
+
+    .team-call,
+    .team-call .btn {
+        max-width: 100%;
+        order: 2;
+    }
+
+
+    /* categories */
+
+
+    .categories-wrapper .product-item {
+        width: 48%;
+    }
+
+    /* filter */
+
+    .sidebar-left {
+        margin-bottom: 20px;
+        /* max-width: 260px; */
+        width: 38%;
+    }
+
+    .cat-content {
+        /* max-width: 405px; */
+        width: 58%;
+    }
+
+    .cat-card {
+        /* max-width: 100%; */
+        width: 48%;
+    }
+
+    .cat-btns .btn {
+        margin-bottom: 5px;
+    }
+
+    /* product */ 
+
+    .item-full-info {
+        padding: 30px 0px 50px 0;
+    }
+
+    .crumb {
+        font-size: 12px;
+    }
+
+    .cat-card.slick-slide {
+        max-width: 362px !important;
+    }
+
+    .item-full-img {
+        width: 100%;
+    }
+
+    .item-full-info {
+        width: 100%;
+    }
+
+    .article-item {
+        width: 48%;
+    }
+
+    .art-img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-item {
+        width: 46%;
+    }
+
+ 
+}
+
+@media (max-width: 520px) {
+
+    .sidebar-left {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .cat-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .categories-wrapper .product-item {
+        width: 100%;
+    }
+
+    .services-wrapper {
+        justify-content: normal;
+    }
+
+    .categories-wrapper {
+        justify-content: center;
+    }
+
+    .cat-content.filter-page .cat-cards {
+        justify-content: center;
+    }
+
+    .cat-card.slick-slide {
+        max-width: 345px !important;
+    }
+
+    .cat-card {
+        /* max-width: 100%; */
+        width: 100%;
+    }
+
+    .article-item {
+        width: 100%;
+    }
+
+    
+    .technology-item {
+        width: 100%;
+        margin-right: 0px;
+    }
+
+    .gallery-item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 345px) {
+    .cat-card.slick-slide {
+        max-width: 288px !important;
+        padding: 20px !important;
+    }
+}

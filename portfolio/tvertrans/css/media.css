@@ -1,0 +1,830 @@
+
+@media (max-width: 767px) and (orientation: landscape) {
+    .mobile-menu .menu-items li {
+        margin-bottom: 18px;
+    }
+
+    .mobile-menu .menu-items {
+        padding-top: 72px;
+    }
+
+    
+    .top-menu {
+        height: 60px;
+    }
+
+    section.home {
+        margin-top: 58px;
+        padding: 76px 0 86px 0;
+    }
+
+    section.home:before {
+       display: none;
+    }
+
+}
+
+@media screen and (max-height: 375px) {
+    a.number-mobile {
+        top: calc(100vh - 54px);
+        display: none !important;
+    }
+
+    section.home {
+        padding: 21px 0px 31px 0px !important;
+    }
+}
+
+
+@media (min-width: 2000px) {
+    section.home {
+        background-size: cover;
+        height: calc(100vh + 400px);
+        background-position: center bottom;
+    }
+}
+
+@media (max-width: 1600px) {
+        section.home {
+        position: relative;
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0.2),
+                rgba(0, 0, 0, 0.2)),
+            url('../images/background.jpg') no-repeat;
+        margin-top: 125px;
+        padding: 260px 0 340px 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section.about {
+        background-position: center;
+    }
+}
+
+@media (max-width: 1439px) {
+    section.excellence {
+        background-size: cover;
+        background-position: bottom;
+    }
+
+}
+
+@media (max-width: 1365px) {
+
+    .top-menu .container {
+        padding: 0px 40px;
+    }
+
+    section.steps img {
+        max-width: 50%;
+    }
+
+    section.portfolio .container {
+        max-width: 980px;
+    }
+
+    .portfolio-footer {
+        padding: 55px 0 55px 0;
+        background-position-y: bottom;
+    }
+
+    section.steps .container {
+        max-width: 1024px;
+        height: 100%;
+    }
+
+    section.services .title {
+        margin-bottom: 180px;
+    }
+
+    .title {
+        margin-bottom: 100px;
+    }
+
+    .client-cards {
+        margin-bottom: 60px;
+    }
+
+    .contacts {
+        padding: 20px 102px;
+        margin-bottom: 20px;
+    }
+
+    .callback {
+        padding: 20px 112px;
+    }
+
+    .steps-list {
+        padding: 25px 50px 25px 0;
+    }
+
+    section.home {
+        background-position: right;
+    }
+
+}
+
+@media (max-width: 1279px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    a.button {
+        padding: 16px 0;
+    }
+
+}
+
+@media (max-width: 1199px) {
+
+    h2 {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+
+    .top-menu {
+        background: #21252D;
+        padding: 0;
+        display: flex;
+    }
+
+    .top-menu a {
+        color: #ffffff;
+        font-size: 26px;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .mobile-menu {
+        display: block;
+        position: relative;
+        height: 64px;
+        order: -1;
+    }
+
+    .company .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company-info {
+        max-width: 930px;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    .company-info h2 {
+        text-align: center;
+    }
+
+    .company-image {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .card-item {
+        width: 30%;
+        padding: 45px 32px 25px 30px;
+    }
+
+    .card-item::after {
+        top: -22%;
+        height: 100px;
+    }
+
+    .card-item h2 {
+        margin-bottom: 15px;
+    }
+
+    .steps .container {
+        max-width: 768px;
+        height: 100%;
+        padding: 0;
+        display: flex;
+    }
+
+    img.section-img {
+        width: 100%;
+        display: flex;
+        border-bottom-right-radius: 50%;
+        position: absolute;
+    }
+
+    .steps-list {
+        padding: 30px 0px 30px 400px;
+    }
+
+    .client-cards-item p {
+        font-size: 14px;
+        line-height: 22px;
+        overflow: hidden;
+        height: 196px;
+        text-overflow: clip;
+    }
+
+    .client-cards-item {
+        width: 32%;
+    }
+
+    .card-item:nth-child(2) {
+        margin: 0px 36px;
+    }
+
+    .client-cards-item:nth-child(2) {
+        margin: 0px 20px;
+    }
+
+    section.company p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    section.services p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+
+    section.steps img {
+        max-width: 375px;
+    }
+
+    .client-cards-item p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    section.steps .container {
+        max-width: 887px;
+    }
+
+    .mobile-menu input[type="checkbox"] {
+        left: 97px;
+    }
+
+    .mobile-menu .hamburger-lines {
+        left: 97px;
+    }
+
+    .mobile-menu input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(30%);
+    }
+
+    section.services {
+        height: auto;
+        padding: 65px 0;
+    }
+
+    section.company {
+        height: auto;
+        padding: 65px 0;
+    }
+
+    section.excellence {
+        height: auto;
+        padding: 65px 0;
+        margin-bottom: 0;
+    }
+
+    section.excellence .container {
+        margin-top: 0px;
+    }
+
+    section.steps {
+        height: auto;
+        padding-top: 120px;
+        margin-bottom: 0px;
+    }
+
+    section.portfolio {
+        padding-top: 65px;
+        margin-bottom: 0;
+    }
+
+    .portfolio .title {
+        margin-bottom: 30px;
+    }
+
+    section.clients {
+        height: auto;
+        margin-bottom: 65px;
+        padding-top: 65px;
+    }
+
+    section.clients .title {
+        margin-bottom: 120px;
+    }
+
+    section.services .title {
+        margin-bottom: 120px;
+    }
+
+    section.about {
+        height: auto;
+        padding: 65px 0;
+    }
+  
+ 
+}
+
+@media (max-width: 991px) {
+
+    .cards {
+        flex-direction: column;
+    }
+
+    section.steps img {
+        max-width: 280px;
+    }
+
+    .card-item::after {
+        top: 18%;
+        height: 80px;
+        width: 35px;
+        left: 2%;
+        border-bottom: 26px solid #930505;
+    }
+
+    .card-item:nth-child(2) {
+        margin: 0;
+        margin-bottom: 45px;
+    }
+
+     .card-item {
+        width: 100%;
+         padding: 20px 32px 20px 75px;
+    }
+
+    .card-item:nth-child(2) {
+        margin: 24px 0;
+    }
+
+    section.services .title {
+        margin-bottom: 25px;
+    }
+
+    .card-inner {
+        height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .steps-list h2 {
+        margin-bottom: 20px;
+    }
+
+    .steps .container {
+        max-width: 720px;
+    }
+
+
+    .steps-list {
+        padding: 14px 0px 22px 318px;
+    }
+
+    .steps-list-item {
+        margin-bottom: 8px;
+    }
+
+    .steps-list-item img {
+        height: 18px;
+    }
+
+    .steps-list-item span {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .client-cards {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    section.clients .title {
+        margin-bottom: 35px;
+    }
+
+    .client-cards-item {
+        width: 100%;
+        max-height: none;
+        min-height: auto;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+    .client-cards-item::after {
+        top: 12%;
+        left: 87%;
+    }
+
+    .client-cards-item span {
+        font-size: 18px;
+    }
+
+    .client-cards-item p {
+        height: auto;
+    }
+
+    .porfrolio-item {
+        flex: 0 1 50%;
+    }
+
+    .portfolio-footer {
+        padding: 36px 0 36px 0;
+        background-position-y: bottom;
+        }
+    
+
+    section.excellence .container {
+        max-width: 770px;
+        margin-top: 0;
+    }
+
+    .excellence .title {
+        margin-bottom: 10px;
+    }
+
+    .excellence-list ul {
+        margin-left: 35px;
+        max-width: 310px;
+    }
+
+    img.section-img {
+        max-width: 288px;
+    }
+
+    section.steps .container {
+        max-width: 720px;
+        height: 100%;
+    }
+
+    .client-card-inner {
+        height: auto;
+    }
+
+    .client-cards-item:nth-child(2) {
+        margin: 0;
+        margin-bottom: 25px;
+    }
+
+    section.portfolio .container {
+        max-width: 680px;
+    }
+
+    .portfolio .title {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-block {
+        margin: -5px;
+    }
+
+    .porfrolio-item {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .top-menu {
+        height: 60px;
+    }
+
+    section.home:before {
+        display: none;
+    }
+
+    section.home {
+        margin-top: 58px;
+    }
+}
+
+@media (max-width: 620px) {
+
+    h2 {
+        font-size: 18px;
+    }
+    
+    .title h2 {
+        font-size: 24px;
+    }
+
+    section.services .title {
+        margin-bottom: 36px;
+    }
+
+    .block-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a.button {
+        margin-bottom: 10px;
+    }
+
+    .card-item h2 {
+        margin-bottom: 8px;
+    }
+
+    .card-item {
+        padding: 15px 15px 15px 60px;
+        margin-bottom: 20px;
+    }
+
+    .steps .container {
+        max-width: 720px;
+        width: 90%;
+        flex-direction: column;
+        max-height: none;
+        justify-content: normal;
+        height: auto;
+    }
+
+    img.section-img {
+        position: relative;
+        max-width: none;
+        height: 50%;
+        object-fit: cover;
+        object-position: top;
+        max-height: 250px;
+        margin-bottom: 20px;
+    }
+
+    .steps-list {
+        padding: 25px;
+    }
+
+    .steps-list h2 {
+        margin-bottom: 16px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .steps-list-item {
+        margin-bottom: 12px;
+    }
+
+    .steps-list a.button {
+        max-width: none;
+    }
+
+
+    .porfrolio-item {
+        flex: 0 1 50%;
+    }
+
+    .portfolio-footer {
+        padding: 37px 0 35px 0;
+        background-position-x: right;
+    }
+
+    .client-cards-item::after {
+        top: 5%;
+        left: 80%;
+    }
+
+    .client-cards-item {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .company-info {
+        margin-bottom: 15px;
+    }
+
+    .company-info h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .company-image img {
+        height: 180px;
+    }
+
+    .contacts {
+        padding: 15px;
+    }
+
+    .callback {
+        padding: 15px;
+    }
+
+    section.company {
+        height: auto;
+        padding: 30px 0;
+    }
+
+    section.excellence {
+        height: auto;
+        padding: 30px 0;
+        margin-bottom: 0;
+    }
+
+    section.steps {
+        height: auto;
+        padding-top: 60px;
+        margin-bottom: 0px;
+    }
+
+    section.home {
+        align-items: flex-start;
+        padding-top: 150px;
+        
+        background-position: right;
+    }
+
+
+    section.steps img.section-img {
+        max-width: 620px;
+    }
+
+    section.clients {
+        margin-bottom: 45px;
+    }
+
+    .client-cards {
+        margin-bottom: 25px;
+    }
+
+
+    .home h1 {
+        font-size: 28px;
+    }
+
+    section.clients .title {
+        margin-bottom: 40px;
+    }
+
+    .client-cards-item p,
+    .card-item p {
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+    }
+
+    .client-cards-item span {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .card-item h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .client-cards-item::after {
+        width: 40px;
+        height: 31px;
+    }
+
+    .excellence-list li {
+        font-size: 14px;
+    }
+
+    .steps-list-item span {
+        font-size: 12px;
+    }
+
+    .contacts .info span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .porfrolio-item {
+        flex: 0 1 100%;
+    }
+
+    .porfrolio-item img {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 376px) {
+    .company-info {
+        margin-bottom: 15px;
+    }
+
+    .company-info h2 {
+        margin-bottom: 8px;
+    }
+
+    section.company p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .company-image {
+        border-radius: 8px;
+        height: 180px;
+        display: flex;
+    }
+
+    section.services .title {
+        margin-bottom: 14px;
+    }
+
+    .card-item {
+        margin-bottom: 12px;
+    }
+
+    .excellence .title {
+        margin-bottom: 12px;
+    }
+
+    .excellence-list li {
+        margin-bottom: 12px;
+    }
+
+    img.section-img {
+        max-height: 200px;
+        margin-bottom: 12px;
+    }
+
+    .steps-list h2 {
+        margin-bottom: 12px;
+    }
+
+    .steps-list-item {
+        margin-bottom: 10px;
+    }
+
+    .steps-list a.button {
+        margin-top: 15px;
+    }
+
+
+    .portfolio-footer {
+        padding: 15px 0 15px 0;
+    }
+
+    a.button {
+        margin-bottom: 0;
+    }
+
+    .client-cards-item {
+        margin-bottom: 12px;
+        padding: 12px;
+    }
+
+    .clients .title {
+        margin-bottom: 12px;
+    }
+
+    .contacts, .callback {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contacts .title {
+        margin-bottom: 12px;
+    }
+
+    .callback .title {
+        margin-bottom: 12px;
+    }
+
+    input[type="text"] {
+        padding: 12px 8px;
+    }
+
+    input[type="submit"] {
+        padding: 15px 0px;
+    }
+
+    .mobile-menu input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(0%);
+    }
+
+    .top-menu a.number-mobile {
+       right: 45px;
+    }
+
+
+    .top-menu .container {
+        padding: 0px 20px;
+    }
+
+
+    .mobile-menu input[type="checkbox"] {
+        left: 78px;
+    }
+
+    .mobile-menu .hamburger-lines {
+        left: 78px;
+    }
+
+    .mobile-menu input[type="checkbox"]:checked~.menu-items {
+        transform: translateX(15%);
+    }
+}

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Nongue Page</title>
+</head>
+
+<body>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        figure,
+        figcaption,
+        blockquote,
+        dl,
+        dd {
+            margin: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            scroll-behavior: smooth;
+            text-rendering: optimizeSpeed;
+            line-height: 1.5;
+        }
+
+        a:not([class]) {
+            text-decoration-skip-ink: auto;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        article>*+* {
+            margin-top: 1em;
+        }
+
+        input,
+        button,
+        textarea,
+        select {
+            font: inherit;
+        }
+
+
+        body,
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Manrope", sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #000;
+            background: #ffffff;
+            min-width: 375px;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: #000;
+            transition: all 0.2s linear;
+        }
+
+        a:hover {
+            color: #688557;
+        }
+
+        .button {
+            display: inline-block;
+            background: #688557;
+            color: #fff;
+            padding-top: 12px;
+            padding-bottom: 8px;
+            width: 195px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 13px;
+            text-transform: uppercase;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background: #fff;
+            color: #688557;
+            -webkit-box-shadow: 0px 0px 0px 2px rgba(104, 133, 87, 1) inset;
+            -moz-box-shadow: 0px 0px 0px 2px rgba(104, 133, 87, 1) inset;
+            box-shadow: 0px 0px 0px 2px rgba(104, 133, 87, 1) inset;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .header-top {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .content-wrap {
+            padding-top: 15px;
+        }
+
+        .left-sidebar {
+            max-width: 184px;
+            width: 100%;
+            padding-left: 15px;
+        }
+
+        .sidebar-menu {
+            border: 1px solid #688557;
+            border-radius: 5px;
+            padding: 19px 0 5px 0;
+            -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            margin-bottom: 21px;
+        }
+
+        .sidebar-menu ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .sidebar-menu ul li {
+            background: #fff;
+            padding: 5px 12px;
+            font-weight: 600;
+        }
+
+        .sidebar-menu ul li:nth-child(2n + 1) {
+            background: #f3f3f3;
+        }
+
+        .menu-title {
+            position: relative;
+            font-family: "Tahoma", sans-serif;
+            line-height: 75%;
+            font-weight: bold;
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        .menu-title::after {
+            position: absolute;
+            content: "";
+            width: 2px;
+            height: 9px;
+            left: 11px;
+            background: #688557;
+        }
+
+        .content-wrap {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .content-sidebar {
+            max-width: 397px;
+            width: 100%;
+            padding-left: 20px;
+            flex: 1;
+        }
+
+        .article {
+            color: #637080;
+            line-height: 192%;
+        }
+
+        .banner-image {
+            background: #fff;
+            border-radius: 3px;
+            -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.05);
+            padding: 0 10px 4px 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0px 16px 0;
+        }
+
+        .footer-wrapper {
+            background: #21140c;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 27px 32px 25px 20px;
+        }
+
+        .foot-left {
+            color: #fff;
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .foot-desc {
+            font-size: 9px;
+            color: #666;
+        }
+
+        .foot-issn {
+            font-size: 9px;
+        }
+
+        .foot-right {
+            font-size: 13px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .foot-contacts {
+            color: #7d8d72;
+        }
+
+        .foot-contact-title {
+            color: #7d8d72;
+        }
+
+        .foot-contact {
+            font-size: 11px;
+            color: #666666;
+        }
+
+        .f-contact {
+            color: #7d99b9;
+            text-decoration: none;
+        }
+
+        @media (max-width: 426px) {
+            .left-sidebar {
+                max-width: 100%;
+                padding-right: 15px;
+            }
+
+            .content-sidebar {
+                max-width: 100%;
+                padding: 15px;
+            }
+
+            .foot-left {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <a href="">view the web version of the email</a>
+            </div>
+            <div class="header-main">
+                <img src="img/banner.jpg">
+            </div>
+        </div>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <div class="content-wrap">
+                <div class="left-sidebar">
+                    <div class="sidebar-menu">
+                        <div class="menu-title">INDEXED</div>
+                        <ul>
+                            <li>
+                                China
+                                Academic Journals (CNKI)</li>
+                            <li>
+                                ELSEVIER</li>
+                            <li>
+                                SCOPUS</li>
+                            <li>
+                                AGRICOLA</li>
+                            <li>
+                                AGRIS</li>
+                            <li>
+                                Review
+                                of Agricultural Entomology</li>
+                            <li>
+                                CAPlus
+                                / SciFinder</li>
+                            <li>
+                                <i>and
+                                    etc.</i></li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="banner-image">
+                        <img src="img/banner-2.jpg">
+                    </div>
+                </div>
+                <div class="content-sidebar">
+                    <p class="article">
+                        <b>Nongye Jixie Xuebao/Transactions of the Chinese Society of Agricultural Machinery</b> is an
+                        international, scientific peer-reviewed open-access journal published online monthly, free
+                        for readers, with article processing charges (APC) paid by authors or their institutions.
+                        <br><br>
+                        Nongye Jixie Xuebao/Transactions of the Chinese Society of Agricultural Machinery is a
+                        comprehensive academic journal sponsored by the Chinese Association for Science and
+                        Technology, the Chinese Society of Agricultural Machinery and the Chinese Academy of
+                        Agricultural Mechanization Science, Chemical Abstracts, Cambridge Scientific Abstracts and
+                        other internationally renowned search institutions.
+                        <br><br>
+                        Nongye Jixie Xuebao/Transactions of the Chinese Society of Agricultural Machinery is a
+                        comprehensive academic journal sponsored by the Chinese Association for Science and
+                        Technology, the Chinese Society of Agricultural Machinery and the Chinese Academy of
+                        Agricultural Mechanization Science, Chemical Abstracts, Cambridge Scientific Abstracts and
+                        other internationally renowned search institutions.
+                    </p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <a href="" class="button">
+                    Paper
+                    submission</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="foot-left">
+                    <div class="foot-name">农业机械学报/Nongye Jixie Xuebao</div>
+                    <div class="foot-desc">Transactions of the Chinese Society of Agricultural
+                        Machinery</div>
+                    <div class="foot-issn">ISSN: 1000-1298</div>
+                </div>
+                <div class="foot-right">
+
+                    <div class="foot-contact-title">
+                        CONTACTS
+                    </div>
+
+                    <div class="foot-contact">
+                        Email:
+                        <a href="mailto:editorialoffice@nyjxxb.net" class="f-contact">editorialoffice@nyjxxb.net</a>
+                    </div>
+
+                    <div class="foot-contact">
+                        Phone:
+                        <a href="tel:010-64882118" class="f-contact">010-64882118</a>
+                    </div>
+
+                    <div class="foot-contact">
+                        Website:
+                        <a href="http://nyjxxb.net" class="f-contact">http://nyjxxb.net</a>
+                    </div>
+
+                    <div class="foot-contact">
+                        Address: No.1 Beishatan, Deshengmenwai,
+                    </div>
+
+                    <div class="foot-contact">
+                        Beijing, P.R. China, Post code: 100083.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
