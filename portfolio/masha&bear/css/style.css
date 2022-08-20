@@ -4,11 +4,11 @@
 
 @font-face {
   font-family: "Phosphate";
-  src: local("Phosphate"), url("/fonts/Phosphate-Solid.woff2") format("woff2"),
-    url("/fonts/Phosphate-Solid.woff") format("woff"),
-    url("/fonts/Phosphate-Solid.ttf") format("ttf"),
-    url("/fonts/Phosphate-Solid.eot") format("eot"),
-    url("/fonts/Phosphate-Solid.otf") format("otf");
+  src: local("Phosphate"), url("../fonts/Phosphate-Solid.woff2") format("woff2"),
+    url("../fonts/Phosphate-Solid.woff") format("woff"),
+    url("../fonts/Phosphate-Solid.ttf") format("ttf"),
+    url("../fonts/Phosphate-Solid.eot") format("eot"),
+    url("../fonts/Phosphate-Solid.otf") format("otf");
 }
 
 /*Обнуление*/
