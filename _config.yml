@@ -8,7 +8,7 @@ logo:               'assets/img/logo_ks.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ru_RU
-url:                https://igorkolesny.github.io
+url:                https://igorkolesny.github.io/
 
 # Jekyll
 permalink:          /:title/
@@ -26,7 +26,7 @@ sass:
   style:            compressed
 
 # Comments
-disqus_shortname:   taylantatli
+disqus_shortname:   igorkolesny
 
 # Social
 # if you don't have any of social below, comment the line.
