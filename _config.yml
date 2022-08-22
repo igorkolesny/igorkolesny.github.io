@@ -4,7 +4,7 @@ bio:                'Веб-разработчик. Автор канала YouT
 description:        "Другие обещают, а я делаю!"
 reading_time:       true
 words_per_minute:   200
-logo:               'assets/img/logo.png'
+logo:               'assets/img/logo_ks.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             ru_RU
@@ -40,7 +40,7 @@ disqus_shortname:   taylantatli
 email:              igorkolesny@yandex.ru  
 twitter:            ke1nstyle
 #facebook:           username
-github-url:         igorkolesny.github.io
+github-url:         igorkolesny
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
@@ -52,8 +52,8 @@ instagram:          _keinstyle_
 #foursquare:        username
 steam:              KeinStyle
 #dribbble:          username
-youtube:           keinstyle
-#youtube-channel:   channel
+#youtube:           keinstyle
+youtube-channel:    keinstyle
 #soundcloud:        username
 #weibo:             username
 #flickr:            username
