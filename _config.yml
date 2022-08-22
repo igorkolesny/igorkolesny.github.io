@@ -1,14 +1,14 @@
 # Site
-title:              Moon
-bio:                'Minimal, one column jekyll theme.'
-description:        "Moon is a minimal, one column jekyll theme for your blog."
+title:              Igor Kolesny
+bio:                'Веб-разработчик. Автор канала YouTube'
+description:        "Другие обещают, а я делаю!"
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
-locale:             en_US
-url:                https://taylantatli.github.io/Moon
+locale:             ru_RU
+url:                https://igorkolesny.github.io
 
 # Jekyll
 permalink:          /:title/
@@ -37,22 +37,22 @@ disqus_shortname:   taylantatli
   #ad-client:
   #ad-slot:
 #bing-verify:
-#email:
-twitter:            username
-facebook:           username
-github-url:         username
+email:              igorkolesny@yandex.ru  
+twitter:            ke1nstyle
+#facebook:           username
+github-url:         igorkolesny.github.io
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 #linkedin:          username
 #xing:              username
-instagram:          username
+instagram:          _keinstyle_
 #lastfm:            username
 #tumblr:            username
 #medium:            '@username'
 #pinterest:         username
 #foursquare:        username
-steam:              username
+steam:              KeinStyle
 #dribbble:          username
-#youtube:           username
+youtube:           keinstyle
 #youtube-channel:   channel
 #soundcloud:        username
 #weibo:             username
