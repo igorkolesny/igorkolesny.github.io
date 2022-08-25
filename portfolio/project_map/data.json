@@ -5,8 +5,8 @@
             "marker_photo": "img/map_photos/photo_1.jpg",
             "item_title": "Тайтл первой метки",
             "marker_text": "ку",
-            "coords_1": "-25.165",
-            "coords_2": "136.044"
+            "coords_1": -25.165,
+            "coords_2": 136.044
         },
     
         {
@@ -15,8 +15,8 @@
             "marker_photo": "img/map_photos/photo_2.jpg",
             "item_title": "Тайтл второй метки",
             "marker_text": "не",
-            "coords_1": "-25.465",
-            "coords_2": "136.044"
+            "coords_1": -25.465,
+            "coords_2": 136.044
         },
 
         {
@@ -25,8 +25,8 @@
             "marker_photo": "img/map_photos/photo_3.jpg",
             "item_title": "Тайтл третьей метки",
             "marker_text": "не",
-            "coords_1": "-26.165",
-            "coords_2": "136.444"
+            "coords_1": -26.165,
+            "coords_2": 136.444
         },
 
         {
@@ -35,8 +35,8 @@
             "marker_photo": "img/map_photos/photo_4.jpg",
             "item_title": "Тайтл четвертой метки",
             "marker_text": "не",
-            "coords_1": "-26.165",
-            "coords_2": "136.444"
+            "coords_1": -26.165,
+            "coords_2": 136.444
         }
     
     
