@@ -1,17 +1,20 @@
-[
-    {  
-        "marker_id": "1",
-        "marker_test_text": "ку",
-        "coords_1": "-25.165",
-        "coords_2": "136.044"
-    },
-
-    {
-        "marker_id": "2",
-        "marker_test_text": "не",
-        "coords_1": "-26.165",
-        "coords_2": "136.444"
-    }
-
-
-]
+{
+    "main": 
+    [
+        {  
+            "marker_id": "1",
+            "marker_test_text": "ку",
+            "coords_1": "-25.165",
+            "coords_2": "136.044"
+        },
+    
+        {
+            "marker_id": "2",
+            "marker_test_text": "не",
+            "coords_1": "-26.165",
+            "coords_2": "136.444"
+        }
+    
+    
+    ]
+}
