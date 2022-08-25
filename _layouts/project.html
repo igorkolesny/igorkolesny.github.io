@@ -24,18 +24,18 @@ layout: compress
                 <div class="post-list">
                     {% for post in site.posts %} 
                         {% if post.project %}
-                    <div class="project-item">
-                        <div class="project-item__wrap wow fadeInLeft" data-wow-duration="1.5s">
-                            {% if post.poster %}
-                            <a class="poster" style="background: url({{post.poster}});" href="{{ post.url | prepend: site.baseurl }}"></a>
-                            {% else %}
-                            <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a>
-                            {% endif %}
-                            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-                            <p>{{ post.excerpt }}</p>
-                            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Подробнее</a>
-                        </div>
-                    </div>
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="project-item wow fadeInLeft" data-wow-duration="1.5s">                     
+                                {% if post.poster %}
+                                    <img src="{{post.poster}}" alt="" class="poster">
+                                    <!-- <a class="poster" style="background: url({{post.poster}});" href="{{ post.url | prepend: site.baseurl }}"></a> -->
+                                {% else %}
+                                    <!-- <a class="poster" href="{{ post.url | prepend: site.baseurl }}"></a> -->
+                                    <img src="{{post.poster}}" alt="" class="poster">
+                                {% endif %}
+                                <div class="post-title zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</div>
+                                <p>{{ post.excerpt }}</p>
+                                <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Подробнее</a>
+                        </a>
                       {% endif %}
                     {% endfor %}
                 </div>
