@@ -40,11 +40,11 @@ h3.title a {
 // post list
 .post-list {
     text-align: left;
-	ul {
-		list-style: none;
+	.project-item {
+		/*list-style: none;*/
 		padding-left: 0;
 	}
-	li {
+	.project-item__wrap {
 		padding: 10px 18px;
 		margin: 0 10px;
 		text-decoration: none;
