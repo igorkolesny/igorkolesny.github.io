@@ -1,10 +1,17 @@
-{
-    "coordinates": [
-        {
-            "id": "marker_1",
-            "marker_test_text": "ку кукуку",
-            "coords_1": "-25.165",
-            "coords_2": "136.044"
-        }
-    ]
-}
+[
+    {  
+        "marker_id": "1",
+        "marker_test_text": "ку кукуку",
+        "coords_1": "-25.165",
+        "coords_2": "136.044"
+    },
+
+    {
+        "marker_id": "2",
+        "marker_test_text": "кукуку",
+        "coords_1": "-26.165",
+        "coords_2": "136.444"
+    }
+
+
+]
