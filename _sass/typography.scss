@@ -51,7 +51,7 @@ h3.title a {
 		background: $white;
 		color: $color_shark;
 		a {
-			@include font-rem(20);
+			@include font-rem(10);
 			text-decoration: none;
 			color: $color_shark;
 			font-weight: bolder;
