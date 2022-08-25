@@ -1,6 +1,6 @@
 [
         {  
-            "id": "1", 
+            "id": "marker_1", 
             "marker_icon": "img/map_markers/marker_1.png",
             "marker_photo": "img/map_photos/photo_1.jpg",
             "item_title": "Тайтл первой метки",
@@ -10,17 +10,17 @@
         },
     
         {
-            "id": "2", 
+            "id": "marker_2", 
             "marker_icon": "img/map_markers/marker_1.png",
             "marker_photo": "img/map_photos/photo_2.jpg",
             "item_title": "Тайтл второй метки",
             "marker_text": "не",
-            "coords_1": "-26.165",
-            "coords_2": "136.444"
+            "coords_1": "-25.465",
+            "coords_2": "136.044"
         },
 
         {
-            "id": "3", 
+            "id": "marker_3", 
             "marker_icon": "img/map_markers/marker_1.png",
             "marker_photo": "img/map_photos/photo_3.jpg",
             "item_title": "Тайтл третьей метки",
@@ -30,7 +30,7 @@
         },
 
         {
-            "id": "3", 
+            "id": "marker_4", 
             "marker_icon": "img/map_markers/marker_1.png",
             "marker_photo": "img/map_photos/photo_4.jpg",
             "item_title": "Тайтл четвертой метки",
