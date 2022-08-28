@@ -239,7 +239,7 @@ img.num-mes {
 }
 
 .marker_box {
-    padding: 40px 20px 20px 40px;
+    padding: 20px;
     display: flex;
 }
 
@@ -248,8 +248,8 @@ img.num-mes {
 }
 
 .gm-style .gm-style-iw-d {
-    margin: -20px;
     padding: 0;
+    overflow: hidden !important;
 }
 
 .gm-style .gm-style-iw-c {
