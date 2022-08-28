@@ -194,8 +194,6 @@ function initMap() {
       let newval = Number(this_click);
 
       this_click = newval;
-
-      console.log(this_click)
       
       let img = document.createElement('img');
       img.className = "num-mes";
