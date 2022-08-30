@@ -128,6 +128,28 @@ function initMap() {
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
       "01.01.1975",
       "выава, can"
+    ],
+    [
+      10,
+      -35.165,
+      137.244,
+      "./img/map_markers/marker_4.png",
+      "./img/map_photos/photo_4.jpg",
+      "Тайтл 11 метки",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "01.01.1975",
+      "выава, can"
+    ],
+    [
+      11,
+      -36.165,
+      137.244,
+      "./img/map_markers/marker_4.png",
+      "./img/map_photos/photo_4.jpg",
+      "Тайтл 12 метки",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      "01.01.1975",
+      "выава, can"
     ]
   ]
 
@@ -151,6 +173,7 @@ function initMap() {
   var marker, i;
 
   var markers = [];
+
 
   for (let its = 0; its < items_description.length; its++) {
     let output_text = "";
@@ -180,7 +203,7 @@ function initMap() {
             <p>${items_description[its][8]}</p>
           </div>
         </div>
-        <p>${items_description[its][6]}</p>
+        <p class="main_info">${items_description[its][6]}</p>
       </div>
     </div>
     `;
@@ -261,10 +284,10 @@ function initMap() {
         }
       })(marker, its));
   
-  
+ 
     markers.push(marker);
 
-    
+
     if (localStorage.getItem(this_click) == 1) {
 
       $('.leftside__item:eq(' + this_click + ')').attr('data-mark', this_click);
@@ -279,16 +302,20 @@ function initMap() {
 
       let slat = Number($(this).attr("data-lat"));
       let slng = Number($(this).attr("data-lng"));
-          
+
+      let goto_mark = markers[this_click];
+
       map.setCenter({
         lat: slat,
         lng: slng
       });
-      
 
       map.setZoom(10);
       infowindow.setContent(output_text);
-  
+      infowindow.open(map, goto_mark);
+
+      // console.log(markers[this_click]);
+      
     })  
   }
   
