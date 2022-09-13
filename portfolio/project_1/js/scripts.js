@@ -22,7 +22,7 @@ $(document).ready(function () {
           clickable: true,
         },
         autoplay: {
-          delay: 5000,
+          delay: 2000,
         },
         navigation: {
           nextEl: ".main-slider__navigation .slide-next",

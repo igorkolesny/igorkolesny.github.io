@@ -190,7 +190,7 @@
 
     .slider-box-nav {
         position: relative;
-        padding-top: 13px;
+        margin-top: 13px;
     }
 
     .main-menu {
@@ -801,7 +801,7 @@
     }
 
     .slider-box-nav {
-        padding-top: 57px;
+        margin-top: 57px;
     }
 
     .slider {
