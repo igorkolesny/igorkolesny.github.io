@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Project_1</title>
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="container">
+    
+        <header>
+            <div class="header-wrapper">
+                <div class="user-photo">
+                    <div class="user-photo_outline">
+                        <img src="img/avatar.png">
+                    </div>
+                    <div class="user-photo_like">
+                        <svg width="34" height="30" viewBox="0 0 34 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.34988e-07 9.00108C-0.000209069 7.80509 0.242752 6.62105 0.714685 5.51817C1.18662 4.41529 1.87805 3.41569 2.74858 2.57779C3.61911 1.73989 4.65127 1.0805 5.78474 0.63816C6.9182 0.195817 8.13024 -0.0206046 9.35 0.00154338C10.7932 -0.00597039 12.2216 0.287311 13.5405 0.86195C14.8593 1.43659 16.0386 2.27946 17 3.3347C17.9614 2.27946 19.1407 1.43659 20.4595 0.86195C21.7784 0.287311 23.2068 -0.00597039 24.65 0.00154338C25.8698 -0.0206046 27.0818 0.195817 28.2153 0.63816C29.3487 1.0805 30.3809 1.73989 31.2514 2.57779C32.1219 3.41569 32.8134 4.41529 33.2853 5.51817C33.7572 6.62105 34.0002 7.80509 34 9.00108C34 17.9273 23.1557 24.6669 17 30C10.8579 24.6219 1.34988e-07 17.934 1.34988e-07 9.00108Z" fill="#FF616E" fill-opacity="0.4"/>
+                            <path d="M0.8 9.00108V9.00094C0.79981 7.91352 1.02069 6.83658 1.45018 5.8329C1.87968 4.82918 2.5094 3.91838 3.30336 3.15418C4.09736 2.38994 5.03966 1.78769 6.07558 1.38342C7.11153 0.979133 8.2198 0.781154 9.33548 0.801412L9.34482 0.801581L9.35417 0.801533C10.6864 0.794597 12.0045 1.06535 13.2209 1.59536C14.4373 2.12535 15.5237 2.9022 16.4086 3.87349L17 4.52256L17.5914 3.87349C18.4763 2.9022 19.5627 2.12535 20.7791 1.59536C21.9955 1.06535 23.3136 0.794597 24.6458 0.801533L24.6552 0.801581L24.6645 0.801412C25.7802 0.781154 26.8885 0.979133 27.9244 1.38342C28.9603 1.78769 29.9026 2.38994 30.6966 3.15418C31.4906 3.91838 32.1203 4.82918 32.5498 5.8329C32.9793 6.83658 33.2002 7.91352 33.2 9.00094V9.00108C33.2 13.1328 30.6862 16.8518 27.2438 20.2812C25.5338 21.9847 23.6274 23.585 21.7503 25.1021C21.2124 25.5368 20.6751 25.9661 20.1454 26.3893C19.0428 27.2702 17.9736 28.1245 17.0026 28.9451C15.989 28.0805 14.8683 27.1822 13.7136 26.2566C13.2318 25.8705 12.7441 25.4796 12.2558 25.0844C10.3787 23.5652 8.47169 21.9667 6.76065 20.2662C3.31622 16.8429 0.8 13.1354 0.8 9.00108Z" stroke="#FF616E" stroke-opacity="0.7" stroke-width="1.6"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="user-status">online<span class="status_indicator online"></span></div>
+                <div class="user-name">Екатерина Миронова</div>
+                <div class="user-rating">
+                    <input type="range" class="user-rating_line rating-progress" min="1" max="100" value="91">
+                    <div class="user-rating_line-info">
+                        <div class="user-rating_percent">
+                            <i class="icon-like_icon"></i>
+                            <span class="percent_count">91%</span>
+                        </div>
+                        <div class="user-rating_reviews"><span class="reviews_count">73</span>&nbsp;отзыва</div>
+                    </div>
+
+                    <div class="user-rating_end">
+                        <div class="user-rating_score">4,6</div>
+                        <div class="user-rating_stars">
+                            <!-- <i class="icon-star_default_icon"></i>
+                            <i class="icon-star_default_icon"></i>
+                            <i class="icon-star_default_icon"></i>
+                            <i class="icon-star_default_icon"></i>
+                            <i class="icon-star_default_icon"></i> -->
+                            <img src="img/rating_stars_all.svg" class="rating_stars_vector">
+                        </div>
+                    </div>
+                </div>
+                <div class="user-buttons">
+                    <a href="" class="link_button">
+                        <i class="icon-union_icon"></i>
+                        Отзывы
+                    </a>
+                    <a href="" class="link_button">
+                        <i class="icon-video_icon"></i>
+                        Видеоотзывы
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="user-others">
+            <button class="button grd">
+                Напишите мне
+                <i class="icon-button_hearth_icon"></i>
+            </button>
+
+            <div class="user-note">И нет сомнений, что акционеры крупнейших компаний представляют собой, <a href=""><b>оставляйте отзывы</b></a></div>
+        </div>
+
+        <div class="user-article">
+            <div class="user-article_image">
+                <img src="img/article_image.jpg">
+            </div>
+            <div class="user-article_text">
+                <h1 class="title">Заголовок Н1</h1>
+                <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что курс на социально-ориентированный национальный проект способствует подготовке и реализации глубокомысленных рассуждений. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности в значительной степени обусловливает важность переосмысления внешнеэкономических политик. А ещё тщательные исследования конкурентов смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <nav class="main-menu">
+            <ul>
+                <li class="menu-item"><a href="index.html">Главная</a></li>
+                <li class="menu-item"><a href="forum.html" target="_blank">Форум</a></li>
+                <li class="menu-item"><a href="contacts.html" target="_blank">Контакты</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+                <li class="menu-item"><a href="">Навигация</a></li>
+            </ul>
+    </nav>
+
+    <div class="container">
+
+        <section class="reviews">
+            <h2 class="section-title">Заголовок H2</h2>
+
+            <div class="reviews-wrapper">
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Zv11L-ZfrSg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 1</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/WH_YXyoWLU0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <a href="" class="review-item">
+                    <div class="review-item__content">
+                        <!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BHACKCNDMW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                        <span>Здесь будет видеоотзыв</spaы>
+                    </div>
+                    <div class="review-item__info">
+                        <span>Номер 2</span> 
+                        <span>10.10.1010</span>
+                    </div>
+                </a>
+                <!--  -->
+
+
+                <div class="review_controls">
+                    <a href="" class="button show_all_reviews">Еще отзывы (<span></span>)</a>
+                    <a href="" class="button close_all_reviews" style="display: none;">Скрыть отзывы</a>
+                </div>
+                
+            </div>
+
+        </section>
+
+        <section class="vote">
+            <div class="vote-wrapper">
+                <div class="vote-menu">
+                    <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="2" cy="2" r="2" fill="#3F7373"/>
+                        <circle cx="2" cy="8" r="2" fill="#3F7373"/>
+                        <circle cx="2" cy="14" r="2" fill="#3F7373"/>
+                    </svg>
+                </div>
+
+                <div class="votes__block">
+
+                    <div class="votes__titles">
+                        <div class="vote_1-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Кто вы по знаку зодиака?</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="vote_2-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Какой ваш возраст?</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vote_3-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Текст вопроса</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                                </div>
+                            </div>   
+                        </div>
+
+                        <div class="vote_4-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Текст вопроса</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vote_5-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Текст вопроса</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vote_6-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Текст вопроса</h4>
+                                <div class="vote-info">
+                                    <span>Анонимный опрос · переголосовать нельзя · выбор нескольких вариантов</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="vote_7-title">
+                            <div class="vote-title">
+                                <h4 class="vote-question">Текст</h4>
+                            </div>
+                        </div>
+
+                        <div class="vote-range-line">
+                            <div class="vote-range"></div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="vote_1 vote__item">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Кто вы по знаку зодиака?</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                            </div>
+                        </div>                       -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="1"> -->
+                        <div class="vote-number"><span class="current-vote">1</span>/<span class="all-votes">6</span></div>
+
+                        <div class="vote-variants" data-vote="vote_1">
+                            <div class="vote-variant">
+                                ♊ Близнецы   
+                                <div class="vote-variant_result" data-percent="8"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♈ Овен
+                                <div class="vote-variant_result" data-percent="8"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♉ Телец
+                                <div class="vote-variant_result" data-percent="9"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♋ Рак
+                                <div class="vote-variant_result" data-percent="6"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♌ Лев
+                                <div class="vote-variant_result" data-percent="7"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♍ Дева
+                                <div class="vote-variant_result" data-percent="12"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♎ Весы
+                                <div class="vote-variant_result" data-percent="6"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♏ Скорпион
+                                <div class="vote-variant_result" data-percent="10"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                            ♐ Стрелец
+                                <div class="vote-variant_result" data-percent="8"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                ♑ Козерог
+                                <div class="vote-variant_result" data-percent="7"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                            ♒ Водолей 
+                                <div class="vote-variant_result" data-percent="8"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                            ♓ Рыбы
+                                <div class="vote-variant_result" data-percent="11"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+                            <a href="" class="button next-vote">Следующий вопрос (2/6)</a>
+                        </div>
+                    </div>
+
+                    <div class="vote_2 vote__item">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Какой ваш возраст?</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                            </div>
+                        </div> -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="2"> -->
+                        <div class="vote-number"><span class="current-vote">2</span>/<span class="all-votes">6</span></div>
+                        
+                        <div class="vote-variants" data-vote="vote_2">
+                            <div class="vote-variant">
+                                15-20
+                                <div class="vote-variant_result" data-percent="2"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                20-25
+                                <div class="vote-variant_result" data-percent="6"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                25-30
+                                <div class="vote-variant_result" data-percent="8"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                30-35
+                                <div class="vote-variant_result" data-percent="11"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                35-40
+                                <div class="vote-variant_result" data-percent="14"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                40-45
+                                <div class="vote-variant_result" data-percent="16"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                45-50
+                                <div class="vote-variant_result" data-percent="13"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                50-55
+                                <div class="vote-variant_result" data-percent="10"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                55-60
+                                <div class="vote-variant_result" data-percent="7"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                60-65
+                                <div class="vote-variant_result" data-percent="4"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                60-70
+                                <div class="vote-variant_result" data-percent="3"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                70 и более
+                                <div class="vote-variant_result" data-percent="6"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+                            <a href="" class="button next-vote">Следующий вопрос (3/6)</a>
+                        </div>
+                    </div>
+
+                    <div class="vote_3 vote__item">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Текст вопроса</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                            </div>
+                        </div>       -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="3"> -->
+                        <div class="vote-number"><span class="current-vote">3</span>/<span class="all-votes">6</span></div>
+                        
+                        <div class="vote-variants" data-vote="vote_3">
+                            <div class="vote-variant">
+                            Ответ
+                                <div class="vote-variant_result" data-percent="62"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                Ответ
+                                <div class="vote-variant_result" data-percent="38"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+    
+                            <a href="" class="button next-vote">Следующий вопрос (4/6)</a>
+                        </div>
+                    </div>
+
+                    <div class="vote_4 vote__item">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Текст вопроса</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                            </div>
+                        </div> -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="4"> -->
+                        <div class="vote-number"><span class="current-vote">4</span>/<span class="all-votes">6</span></div>
+                        
+                        <div class="vote-variants" data-vote="vote_4">
+                            <div class="vote-variant">
+                            Ответ
+                                <div class="vote-variant_result" data-percent="32"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                Ответ
+                                <div class="vote-variant_result" data-percent="61"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                Ответ
+                                <div class="vote-variant_result" data-percent="7"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+    
+                            <a href="" class="button next-vote">Следующий вопрос (5/6)</a>
+                        </div>
+                    </div>
+                  
+                    <div class="vote_5 vote__item">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Текст вопроса</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос</span>·<span>переголосовать нельзя</span>
+                            </div>
+                        </div> -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="5"> -->
+                        <div class="vote-number"><span class="current-vote">5</span>/<span class="all-votes">6</span></div>
+                        
+                        <div class="vote-variants" data-vote="vote_5">
+                            <div class="vote-variant">
+                            Ответ
+                                <div class="vote-variant_result" data-percent="71"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                Ответ
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+                            <a href="" class="button next-vote">Следующий вопрос (6/6)</a>
+                        </div>
+                    </div>
+
+                    <div class="vote_6 vote__item last__question">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Текст вопроса</h4>
+                            <div class="vote-info">
+                                <span>Анонимный опрос · переголосовать нельзя · выбор нескольких вариантов</span>
+                            </div>
+                        </div> -->
+                        <!-- <input type="range" id="vote-count_id" class="vote-count rating-progress" min="0" max="6" value="6"> -->
+                        <div class="vote-number"><span class="current-vote">6</span>/<span class="all-votes">6</span></div>
+                        
+                        <div class="vote-variants" data-vote="vote_6">
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox" data-target="checkbox_variant_1">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label>                       
+                                </div>
+                            
+                                <div class="vote-variant_result" data-percent="71"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label>   
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+                            <div class="vote-variant">
+                                <div class="vote-variant__checkbox">
+                                    <label class="custom-checkbox vote_checkbox">
+                                        <input type="checkbox" name="vote-variant__check" id="checkbox_variant_1" class="checkbox_votes">
+                                        <span>Ответ</span>
+                                    </label> 
+                                </div>
+                                <div class="vote-variant_result" data-percent="29"></div>
+                                <div class="vote-variant__counts"></div>
+                            </div>
+    
+                            <a href="" class="button end_vote">Выбрать и завершить</a>
+                        </div>
+                    </div>
+
+                    <div class="vote_7 vote__item vote_last_step">
+                        <!-- <div class="vote-title">
+                            <h4 class="vote-question">Текст</h4>
+                        </div> -->
+                        <div class="last_vote_controls">
+                            <a href="" class="button vote_goto">Переход 1</a>
+                            <a href="" class="button vote_goto">Переход 2</a>     
+                        </div>
+                        
+                </div>
+
+
+                </div>
+
+                <div class="vote-whois">Проголосовали <span class="vote-whois_count">3168</span> человек</div>
+
+
+               
+            </div>
+
+            <div class="subvote-wrapper">
+                <h3>Заголовок</h3>
+                <ul class="subvote-list">
+                    <li class="subvote-list_item"><a href="">Текст-рыба на русском языке</a></li>
+                    <li class="subvote-list_item"><a href="">Текст-рыба на русском языке</a></li>
+                    <li class="subvote-list_item">
+                        <a href="">Текст-рыба на русском языке</a>
+                        <ul class="subvote-list_parent">
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                        </ul>
+                    </li>
+                    <li class="subvote-list_item"><a href="">Текст-рыба на русском языке</a></li>
+                    <li class="subvote-list_item">
+                        <a href="">Текст-рыба на русском языке</a>
+                        <ul class="subvote-list_parent">
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                            <li class="subvote-list__item-parent"><a href="">Текст-рыба на русском языке</a></li>
+                        </ul>
+                    </li>
+                    <li class="subvote-list_item"><a href="">Текст-рыба на русском языке</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="cards">
+            <h2 class="section-title">Заголовок Н2</h2>
+            <p>
+                И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу.  <br>
+               <b>Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками — <a href="">Клик текст </a></b> 
+            </p>
+            <div class="cards-wrapper">
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img src="img/card_image_2.jpg" class="card-image">
+                    <div class="card-info">
+                        <div class="card-text">Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками</div>
+                        <div class="card-name">Название карточки</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="articles">
+            <h2 class="section-title">Заголовок Н2</h2>
+
+            <div class="articles-wrapper">
+                <div class="user-article">
+                    <div class="user-article_image">
+                        <img src="img/article_image_3.jpg">
+                    </div>
+                    <div class="user-article_text">
+                        <h3>Заголовок</h3>
+                        <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. <b>И нет сомнений, что акционеры,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы.</p>
+                        <h3>Заголовок</h3>
+                        <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. <b>И нет сомнений, что акционеры,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы.</p>
+                    </div>
+                    <div class="article-others">
+                    <button class="button butph">
+                        <img src="img/button_photo.png" class="butph-photo">
+                        Напишите мне
+                        <i class="icon-button_hearth_icon"></i>
+                    </button>
+                    </div>
+                </div>
+
+                <div class="user-article">
+                    <div class="user-article_image">
+                        <img src="img/article_image_3.jpg">
+                    </div>
+                    <div class="user-article_text">
+                        <h3>Заголовок</h3>
+                        <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. <b>И нет сомнений, что акционеры,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы.</p>
+                        <h3>Заголовок</h3>
+                        <p>И нет <b>сомнений,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач <b>текст рыба,</b> текст рыба, текст рыба рыба текст И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. <b>И нет сомнений, что акционеры крупнейших — <a href="">Клик текст</a></b></p>
+                        <br>
+                        <h3>Заголовок</h3>
+                        <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. <b>И нет сомнений, что акционеры,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы.</p>
+                    </div>
+                    <div class="article-others">
+                    <button class="button butph">
+                        <img src="img/button_photo.png" class="butph-photo">
+                        Напишите мне
+                        <i class="icon-button_hearth_icon"></i>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="default">
+            <h2 class="section-title">Заголовок Н2</h2>
+            <p>
+                И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом рыба, почему рыба, почему рыба, куда рыба. Однако причина есть всегда. И нет сомнений, что акционеры крупнейших компаний представляют собой рыба текст. И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. Рыба текст — Клик текст
+            </p>
+            <div class="default-wrapper">
+
+                <div class="user-articles-type">
+                    <div class="user-article article-type_2">
+                        <div class="user-article_image">
+                            <img src="img/article_image_3.jpg">
+                        </div>
+                        <div class="user-article_text">
+                            <h3>Заголовок</h3>
+                            <div class="article-type_2-content">
+                                <ul>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                </ul>
+                            </div>
+                        
+                            <div class="article-others">
+                                <button class="button butph">
+                                    <img src="img/button_photo.png" class="butph-photo">
+                                    Напишите мне
+                                    <i class="icon-button_hearth_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-article article-type_2">
+                        <div class="user-article_image">
+                            <img src="img/article_image_3.jpg">
+                        </div>
+                        <div class="user-article_text">
+                            <h3>Заголовок</h3>
+                            <div class="article-type_2-content">
+                                <ul>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                </ul>
+                            </div>
+
+                            <div class="article-others">
+                                <button class="button butph">
+                                    <img src="img/button_photo.png" class="butph-photo">
+                                    Напишите мне
+                                    <i class="icon-button_hearth_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="user-article article-type_2">
+                        <div class="user-article_image">
+                            <img src="img/article_image_3.jpg">
+                        </div>
+                        <div class="user-article_text">
+                            <h3>Заголовок</h3>
+                            <div class="article-type_2-content">
+                                <ul>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                </ul>
+                            </div>
+
+                            <div class="article-others">
+                                <button class="button butph">
+                                    <img src="img/button_photo.png" class="butph-photo">
+                                    Напишите мне
+                                    <i class="icon-button_hearth_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-article article-type_2">
+                        <div class="user-article_image">
+                            <img src="img/article_image_3.jpg">
+                        </div>
+                        <div class="user-article_text">
+                            <h3>Заголовок</h3>
+                            <div class="article-type_2-content">
+                                <ul>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                </ul>
+                            </div>
+
+                            <div class="article-others">
+                                <button class="button butph">
+                                    <img src="img/button_photo.png" class="butph-photo">
+                                    Напишите мне
+                                    <i class="icon-button_hearth_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-article article-type_2">
+                        <div class="user-article_image">
+                            <img src="img/article_image_3.jpg">
+                        </div>
+                        <div class="user-article_text">
+                            <h3>Заголовок</h3>
+                            <div class="article-type_2-content">
+                                <ul>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                    <li>Текст-рыба на русском языке</li>
+                                </ul>
+                            </div>
+
+                            <div class="article-others">
+                                <button class="button butph">
+                                    <img src="img/button_photo.png" class="butph-photo">
+                                    Напишите мне
+                                    <i class="icon-button_hearth_icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <h2 class="section-title">Заголовок Н2</h2>
+            <p><span style="color: red">И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом.</span>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом <b>И нет сомнений, что акционеры крупнейших компаний представляют собой — <br><a href="">Напишите мне</a></b></p>
+            <br>
+            <p>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, <b>как квинтэссенцию</b> победы маркетинга над разумом и должны <b>быть призваны</b> к ответу. Господа, <b>перспективное</b> планирование И нет <b>сомнений,</b> что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом – <b>И нет сомнений — <a href="">Напишите мне</a></b></p>
+
+            <div class="slider-wrapper">
+                <h3>Заголовок н3</h3>
+                <div class="slider-box-nav">
+                    <div class="main-slider__navigation">
+                        <div class="slide-prev">
+                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34 0C24.9826 0 16.3346 3.58213 9.95837 9.95837C3.58213 16.3346 0 24.9826 0 34C0 43.0174 3.58213 51.6654 9.95837 58.0416C16.3346 64.4179 24.9826 68 34 68C43.0174 68 51.6654 64.4179 58.0416 58.0416C64.4179 51.6654 68 43.0174 68 34C68 24.9826 64.4179 16.3346 58.0416 9.95837C51.6654 3.58213 43.0174 0 34 0V0ZM48.875 31.875C49.4386 31.875 49.9791 32.0989 50.3776 32.4974C50.7761 32.8959 51 33.4364 51 34C51 34.5636 50.7761 35.1041 50.3776 35.5026C49.9791 35.9011 49.4386 36.125 48.875 36.125H24.2547L33.3795 45.2455C33.5771 45.4431 33.7338 45.6776 33.8407 45.9358C33.9477 46.1939 34.0027 46.4706 34.0027 46.75C34.0027 47.0294 33.9477 47.3061 33.8407 47.5642C33.7338 47.8224 33.5771 48.0569 33.3795 48.2545C33.1819 48.4521 32.9474 48.6088 32.6892 48.7157C32.4311 48.8227 32.1544 48.8777 31.875 48.8777C31.5956 48.8777 31.3189 48.8227 31.0608 48.7157C30.8026 48.6088 30.5681 48.4521 30.3705 48.2545L17.6205 35.5045C17.4226 35.3071 17.2656 35.0726 17.1585 34.8144C17.0513 34.5563 16.9962 34.2795 16.9962 34C16.9962 33.7205 17.0513 33.4437 17.1585 33.1856C17.2656 32.9274 17.4226 32.6929 17.6205 32.4955L30.3705 19.7455C30.7695 19.3465 31.3107 19.1223 31.875 19.1223C32.4393 19.1223 32.9805 19.3465 33.3795 19.7455C33.7785 20.1445 34.0027 20.6857 34.0027 21.25C34.0027 21.8143 33.7785 22.3555 33.3795 22.7545L24.2547 31.875H48.875Z" fill="#203F57"/>
+                            </svg>                            
+                        </div>
+                        <div class="slide-next">
+                            <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M34 68C43.0174 68 51.6654 64.4179 58.0416 58.0416C64.4179 51.6654 68 43.0174 68 34C68 24.9826 64.4179 16.3346 58.0416 9.95837C51.6654 3.58213 43.0174 7.88323e-07 34 0C24.9826 -7.88323e-07 16.3346 3.58213 9.95837 9.95837C3.58213 16.3346 7.88323e-07 24.9826 0 34C-7.88322e-07 43.0174 3.58213 51.6654 9.95837 58.0416C16.3346 64.4179 24.9826 68 34 68ZM19.125 36.125C18.5614 36.125 18.0209 35.9011 17.6224 35.5026C17.2239 35.1041 17 34.5636 17 34C17 33.4364 17.2239 32.8959 17.6224 32.4974C18.0209 32.0989 18.5614 31.875 19.125 31.875L43.7453 31.875L34.6205 22.7545C34.4229 22.5569 34.2662 22.3224 34.1593 22.0642C34.0523 21.8061 33.9973 21.5294 33.9973 21.25C33.9973 20.9706 34.0523 20.6939 34.1593 20.4358C34.2662 20.1776 34.4229 19.9431 34.6205 19.7455C34.8181 19.5479 35.0526 19.3912 35.3108 19.2843C35.5689 19.1774 35.8456 19.1223 36.125 19.1223C36.4044 19.1223 36.6811 19.1774 36.9392 19.2843C37.1974 19.3912 37.4319 19.5479 37.6295 19.7455L50.3795 32.4955C50.5774 32.6929 50.7344 32.9274 50.8415 33.1856C50.9487 33.4437 51.0038 33.7205 51.0038 34C51.0038 34.2795 50.9487 34.5563 50.8415 34.8144C50.7344 35.0726 50.5774 35.3071 50.3795 35.5045L37.6295 48.2545C37.2305 48.6535 36.6893 48.8777 36.125 48.8777C35.5607 48.8777 35.0195 48.6535 34.6205 48.2545C34.2215 47.8555 33.9973 47.3143 33.9973 46.75C33.9973 46.1857 34.2215 45.6445 34.6205 45.2455L43.7453 36.125H19.125Z" fill="#203F57"/>
+                            </svg>                            
+                        </div>
+                    </div>
+                
+                    <div class="swiper-container main-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide main-slider__item">
+                                    <img src="img/article_image_2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide main-slider__item">
+                                    <img src="img/article_image_2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide main-slider__item">
+                                    <img src="img/article_image_2.jpg" alt="">
+                                </div>
+                                <div class="swiper-slide main-slider__item">
+                                    <img src="img/article_image_2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="default">
+            <h2 class="section-title">Заголовок Н2</h2>
+            <div class="default-wrapper">
+                <div class="user-article">
+                    <div class="user-article_image">
+                        <img src="img/article_image.jpg">
+                    </div>
+                    <div class="user-article_text">
+                        <h3>Заголовок h3</h3>
+                        <p>
+                           <u>И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом</u> И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками
+                        </p>
+                        <br>
+                        <p>
+                            И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками
+                        </p>
+                        <br>
+                        <p>
+                            И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, <b>занимаемых участниками в отношении поставленных задач.</b> 
+                        </p>
+                    </div>
+                    <div class="article-others">
+                    <button class="button butph">
+                        <img src="img/telegram_icon.svg" class="butph-photo">
+                        Напишите мне
+                        <i class="icon-button_hearth_icon"></i>
+                    </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="default articles-box">
+            <h2 class="section-title">Заголовок Н2</h2>
+            <p>  И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что курс на социально-ориентированный национальный проект способствует подготовке и реализации глубокомысленных рассуждений. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности в значительной степени обусловливает важность</p>
+            <article class="article-item">
+                <h3>Заголовок н3</h3>
+                <button class="button butph">
+                    <img src="img/telegram_icon.svg" class="butph-photo">
+                    @qwerty123
+                    <i class="icon-button_hearth_icon"></i>
+                </button>
+            </article>
+            <article class="article-item">
+                <h3>Заголовок н3</h3>
+                <p>
+                    И нет сомнений, что акционеры крупнейших компаний представляют собой не что иное, как квинтэссенцию победы маркетинга над разумом и должны быть призваны к ответу. Господа, перспективное планирование не оставляет шанса для позиций, занимаемых участниками в отношении поставленных задач
+                </p>
+            </article>
+               
+                
+            
+        </section>
+
+        <section class="reviews-box">
+            <h2 class="section-title">Заголовок Н2</h2>
+
+            <div class="reviews-box__wrapper">
+                <div class="review-box__block">
+                    <div class="reviews-box__info">И нет сомнений, что акционеры крупнейших компаний представляют собой <a href="">контактам</a> на сайте. Эта форма предназначена лишь для отзывов!</div>
+                    
+
+                    <div class="form-sended__box">
+                        <div class="form-sended__loading">
+                            <div id="loader"></div>
+                            <div class="loader-counter">
+                                <span>Отправка</span>&nbsp;<span class="loader__counts"></span>
+                            </div>
+                        </div>
+                        <div id="form-sended__message" class="animate-bottom">
+                            <h2>Успешно!</h2>
+                            <p>Ваш отзыв успешно добавлен!</p>
+                        </div>
+                    </div>
+                  
+                    <form action="" method="post" class="review-form">
+                        <input type="text" name="name" id="name" placeholder="Имя" required>
+                        <input type="text" name="lastname" id="lastname" placeholder="Фамилия" required>
+
+
+                        <div class="choose-photo">
+                            <input name="file" type="file" name="file" id="choose" class="choose-photo__input">
+                            <label for="choose" class="choose-photo__input-label">
+                                <img class="choose-photo__icon-img" src="img/add_photo.svg">
+                            </label>
+                        </div>
+
+
+
+
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
+                        <textarea name="message" id="message" class="review_message" cols="60" rows="5" placeholder="Напишите ваш отзыв" required></textarea>
+
+                        <div class="review-controls">
+                            <div class="review-controls__ratingbox">
+                                <div class="review-controls__rating">
+                                    <i class="icon-star_default_icon rating-item active" data-rate="1"></i>
+                                    <i class="icon-star_default_icon rating-item" data-rate="2"></i>
+                                    <i class="icon-star_default_icon rating-item" data-rate="3"></i>
+                                    <i class="icon-star_default_icon rating-item" data-rate="4"></i>
+                                    <i class="icon-star_default_icon rating-item" data-rate="5"></i>
+                                </div>
+                                <span>Ваша оценка</span>
+                            </div>
+                            <div class="review-controls__publishbox">
+                                <label class="custom-checkbox">
+                                    <input type="checkbox" name="publish" value="publish">
+                                    <span>Анонимно</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="add_review" class="btn_button">Добавить отзыв</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="reviews-list">
+            <div class="reviews-list__wrapper">
+
+                <div class="reviews-list__stat">
+                    <div class="user-rating_end reviews-rating">
+                        <div class="user-rating_score">4,6</div>
+                        <div class="user-rating_stars">
+                            <img src="img/rating_stars_all.svg" class="rating_stars_vector">
+                        </div>
+                    </div>
+                    <div class="reviews-list__counts">
+                       <span class="reviews-list__counts-numbers">Отзывов: 73</span>  
+                       <span>·</span> 
+                       <span class="reviews-list__counts-scores">Оценок: 38</span> 
+                    </div>
+                </div>
+                
+                <div class="comment-box">
+                    <div class="comment">
+                        <div class="review-block__top">
+                            <div class="review-block__photo">
+                                <img src="img/review-photo.jpg">
+                            </div>
+                            <div class="review-block__info">
+                                <div class="review-block__fio">Имя Фамилия</div>
+                                <div class="review-block__info-att">
+                                    <div class="review-block__rating">
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                    </div>
+                                    <div class="review-block__date">24 апр 2022</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="review-block__text">
+                            1 Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие в формировании дальнейших направлений развития
+                        </div>
+                        <div class="review-block__controls">
+                            <a href="#reply-block" class="fancybox reply-review__link">Ответить</a>
+                            <div class="review-block__like">
+                                <button type="button" class="like_btn"> </button>
+                                <span class="like-count">0</span>                    
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+                    
+                <div class="comment-box">
+                    <div class="comment">
+                        <div class="review-block__top">
+                            <div class="review-block__photo">
+                                <img src="img/review-photo.jpg">
+                            </div>
+                            <div class="review-block__info">
+                                <div class="review-block__fio">Имя Фамилия</div>
+                                <div class="review-block__info-att">
+                                    <div class="review-block__rating">
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                        <i class="icon-star_default_icon"></i>
+                                    </div>
+                                    <div class="review-block__date">24 апр 2022</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="review-block__text">
+                            2 Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) участие
+                        </div>
+                        <div class="review-block__controls">
+                            <a href="#reply-block" class="fancybox reply-review__link">Ответить</a>
+                            <div class="review-block__like">
+                                <button type="button" class="like_btn"> </button>
+                                <span class="like-count">1</span>                      
+                            </div>
+                        </div>
+
+                        <div class="commnet-children">
+                            <div class="comment">
+                                <div class="review-block__top">
+                                    <div class="review-block__photo">
+                                        <img src="img/no_photo.jpg">
+                                    </div>
+                                    <div class="review-block__info">
+                                        <div class="review-block__fio">Анонимно</div>
+                                        <div class="review-block__info-att">
+                                            <div class="review-block__date">24 апр 2022</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="review-block__text">
+                                    3 Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу 
+                                </div>
+                                <div class="review-block__controls">
+                                    <a href="#reply-block" class="fancybox reply-review__link">Ответить</a>
+                                    <div class="review-block__like">
+                                        <button type="button" class="like_btn"> </button>
+                                        <span class="like-count">9</span>                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="commnet-children">
+                                <div class="comment">
+                                    <div class="review-block__top">
+                                        <div class="review-block__photo">
+                                            <img src="img/review-photo.jpg">
+                                        </div>
+                                        <div class="review-block__info">
+                                            <div class="review-block__fio">Имя Фамилия</div>
+                                            <div class="review-block__info-att">
+                                                <div class="review-block__date">24 апр 2022</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="review-block__text">
+                                        4 Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности 
+                                    </div>
+                                    <div class="review-block__controls">
+                                        <a href="#reply-block" class="fancybox reply-review__link">Ответить</a>
+                                        <div class="review-block__like">
+                                            <button type="button" class="like_btn"> </button>
+                                            <span class="like-count">10</span>                         
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="commnet-children">
+                                    <div class="comment">
+                                        <div class="review-block__top">
+                                            <div class="review-block__photo">
+                                                <img src="img/no_photo.jpg">
+                                            </div>
+                                            <div class="review-block__info">
+                                                <div class="review-block__fio">Анонимно</div>
+                                                <div class="review-block__info-att">
+                                                    <div class="review-block__date">24 апр 2022</div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="review-block__text">
+                                            5 Равным образом постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает широкому кругу
+                                        </div>
+                                        <div class="review-block__controls">
+                                            <a href="#reply-block" class="fancybox reply-review__link">Ответить</a>
+                                            <div class="review-block__like">
+                                                <button type="button" class="like_btn"> </button>
+                                                <span class="like-count">99</span>                       
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                  
+
+            </div>
+        </section>
+
+
+        <div class="hidden">
+
+            <div class="popup" id="reply-block">     
+                
+                
+                <div class="form-sended__box">
+                    <div class="form-sended__loading">
+                        <div id="loader"></div>
+                        <div class="loader-counter">
+                            <span>Отправка</span>&nbsp;<span class="loader__counts"></span>
+                        </div>
+                    </div>
+                    <div id="form-sended__message" class="animate-bottom">
+                        <h2>Успешно!</h2>
+                        <p>Ваш отзыв успешно добавлен!</p>
+                    </div>
+                </div>
+              
+                <form action="" method="post" class="reply-form">
+                    <input type="text" name="name" id="name" placeholder="Имя" required>
+                    <input type="text" name="lastname" id="lastname" placeholder="Фамилия" required>
+
+
+                    <div class="choose-photo">
+                        <input name="file" type="file" name="file" id="choose" class="choose-photo__input">
+                        <label for="choose" class="choose-photo__input-label">
+                            <img class="choose-photo__icon-img" src="img/add_photo.svg">
+                        </label>
+                    </div>
+
+
+
+
+                    <input type="email" name="email" id="email" placeholder="E-mail" required>
+                    <textarea name="message" id="message" class="review_message" cols="60" rows="5" placeholder="Напишите ваш отзыв" required></textarea>
+
+                    <div class="review-controls">
+                       
+                        <div class="review-controls__publishbox">
+                            <label class="custom-checkbox">
+                                <input type="checkbox" name="publish" value="publish">
+                                <span>Анонимно</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" id="add_review" class="btn_button">Добавить отзыв</button>
+                </form>
+            </div>
+    
+        </div>
+
+    </div>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
