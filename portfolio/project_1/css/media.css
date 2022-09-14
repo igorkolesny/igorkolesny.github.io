@@ -157,7 +157,7 @@
     }
 
     .article-others {
-        padding: 20px 0 0 16px;
+        padding: 20px 0 0 10px;
         text-align: left;
     }
 
@@ -547,9 +547,9 @@
         margin-bottom: 0;
     }
 
-    .article-others {
+    /* .article-others {
         padding: 0;
-    }
+    } */
 
 
 }
@@ -577,11 +577,22 @@
         background: #03B57C;
     }
 
-    .btn_button:hover {
-        cursor: pointer;
+    button.add_btn_form {
         background: #009E6C;
         border-radius: 24px;
     }
+
+    button.add_btn_form:hover {
+        cursor: pointer;
+        background: #4A8787;
+    }
+
+
+    button.add_btn_form[disabled="disabled"] {
+        pointer-events: none;
+        background: #BFBFBF;
+    }
+    
 
 
     h3 {
@@ -808,9 +819,9 @@
         margin-bottom: 66px;
     }
 
-    .slider-dots {
+    /* .slider-dots {
         display: none;
-    }
+    } */
 
     .slider p {
         margin-bottom: 23px;
@@ -940,6 +951,21 @@
     .dwnld_links {
         gap: 10px 0;
         padding-top: 10px;
+    }
+
+    .vote-variant:hover {
+        cursor: pointer;
+        background: rgba(71, 128, 128, 0.45);
+    }
+
+    .reply-review__link:hover {
+        color: #3C76A6;
+    }
+
+    .like_btn:hover {
+        cursor: pointer;
+        background: url('../img/like_icon_liked.svg') no-repeat;
+        transition: all .2s linear;
     }
 
 }

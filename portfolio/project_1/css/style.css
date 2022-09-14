@@ -388,11 +388,19 @@ input:focus,
 textarea:focus {
     background-size: 100% 100%, 100% 100%;
     transition-duration: 0.3s;
-    /* box-shadow: none; */
     -webkit-box-shadow: 0px 0px 0px 1px rgba(0, 158, 108, 1);
     -moz-box-shadow: 0px 0px 0px 1px rgba(0, 158, 108, 1);
     box-shadow: 0px 0px 0px 1px rgba(0, 158, 108, 1);
     outline: 0;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    background: #FFF;
+    -webkit-box-shadow: 0px 0px 0px 1px #343434;
+    -moz-box-shadow: 0px 0px 0px 1px #343434;
+    box-shadow: 0px 0px 0px 1px #343434;
 }
 
 input::-webkit-input-placeholder,
@@ -452,7 +460,11 @@ input[type="email"],
 textarea {
     padding: 10px 10px 9px;
     background: #F7F7F7;
-    border: 1px solid #D8D8D8;
+    /* border: 1px solid #D8D8D8; */
+    border: none;
+    -webkit-box-shadow: 0px 0px 0px 1px #D8D8D8;
+    -moz-box-shadow: 0px 0px 0px 1px #D8D8D8;
+    box-shadow: 0px 0px 0px 1px #D8D8D8;
     border-radius: 4px;
     font-weight: 500;
     font-size: 15px;
@@ -464,7 +476,6 @@ textarea {
     width: 100%;
     resize: none;
 }
-
 
 .title {
     font-size: 30px;
@@ -516,8 +527,8 @@ ul {
 }
 
 button.button.butph.tap {
-    transform: scale(0.97);
-    transition: all .15s linear;
+    transform: scale(0.98);
+    /* transition: all .15s linear; */
     box-shadow: none;
 }
 
@@ -534,6 +545,7 @@ button.button.butph.tap {
     border-radius: 38px;
     overflow: hidden;
     background: linear-gradient(90deg, #048F5F 0%, #03B57C 100%);
+    box-shadow: 0px 3px 5px rgb(0 41 28 / 30%);
     z-index: 1;
 }
 
@@ -562,7 +574,7 @@ button.button.butph.tap {
     position: relative;
     padding: 5px 25px 5px 7px;
     background: linear-gradient(90deg, #03B57C 0%, #048F5F 100%);
-    box-shadow: 0px 3px 5px rgba(0, 41, 28, 0.3);
+    /* box-shadow: 0px 3px 5px rgba(0, 41, 28, 0.3); */
     border-radius: 38px;
     gap: 0 6px;
     box-shadow: 0px 3px 5px rgba(0, 41, 28, 0.3);
@@ -638,8 +650,8 @@ body {
 
 
 .container {
-    max-width: 360px;
-    padding: 10px;
+    /* max-width: 360px; */
+    padding: 18.5px;
     width: 100%;
     margin: auto;
 }
@@ -1054,7 +1066,7 @@ article.article-item {
 .review-item {
     display: block;
     text-decoration: none;
-    max-width: 368px;
+    /* max-width: 368px; */
     width: 100%;
     border-radius: 12px;
     overflow: hidden;
@@ -1261,10 +1273,10 @@ article.article-item {
 }
 
 
-.vote-variant:hover {
+/* .vote-variant:hover {
     cursor: pointer;
     background: rgba(71, 128, 128, 0.45);
-}
+} */
 
 .vote-variants.this-vote_end .vote-variant:hover {
     pointer-events: none;
@@ -1425,7 +1437,7 @@ article.article-item {
 
 .card-item {
     position: relative;
-    max-width: 360px;
+    /* max-width: 360px; */
     max-height: 312px;
     width: 100%;
     border-radius: 12px;
@@ -1437,10 +1449,12 @@ article.article-item {
 
 
 .card-image {
-    max-width: 360px;
+    /* max-width: 360px; */
+    max-width: 100%;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
+    object-fit: contain;
 }
 
 .card-info {
@@ -1565,9 +1579,8 @@ article.article-item {
 
 .main-slider__navigation {
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    /* display: flex; */
+    top: calc(50% - 48px);
+    transform: translate(0, calc(50% - 48px));
     width: 100%;
     justify-content: space-between;
     z-index: 0;
@@ -1895,9 +1908,9 @@ input#choose {
     color: #28659F;
 }
 
-.reply-review__link:hover {
+/* .reply-review__link:hover {
     color: #3C76A6;
-}
+} */
 
 
 .review-block__like {
@@ -1938,11 +1951,11 @@ input#choose {
     transition: all .2s linear;
 }
 
-.like_btn:hover {
+/* .like_btn:hover {
     cursor: pointer;
     background: url('../img/like_icon_liked.svg') no-repeat;
     transition: all .2s linear;
-}
+} */
 
 
 
@@ -2169,7 +2182,7 @@ form.reply-form {
         opacity: 0;
     }
 
-    50% {
+    80% {
         opacity: 1;
     }
 
@@ -2287,7 +2300,7 @@ form.reply-form {
 
 .topic__message-name {
     color: #1E4158;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
 }

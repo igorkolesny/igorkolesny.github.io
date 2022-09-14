@@ -69,7 +69,7 @@ $(document).ready(function () {
       // заглушка для формы 
       $('form.review-form').on("submit", function(e){
         e.preventDefault();
-
+        $("button.add_btn_form").attr("disabled", "disabled");
         const
         min = 0,
         max = 100,
@@ -92,6 +92,7 @@ $(document).ready(function () {
           if (val == max) {
             setTimeout(function () {
               this_form[0].reset();
+             
               $(".form-sended__loading").slideToggle(300);
               $("#form-sended__message").slideToggle(300);
             }, 2000); 
@@ -107,7 +108,6 @@ $(document).ready(function () {
       // заглушка для формы ответа в окне 
       $('form.reply-form').on("submit", function(e){
         e.preventDefault();
-
         const
         min = 0,
         max = 100,
@@ -447,11 +447,6 @@ $(document).ready(function () {
       }
 
 
-
-      // var rating = document.querySelectorAll('.review-controls__rating'),
-      // ratingItem = document.querySelectorAll('.rating-item');
-
-
       let block = $(".review-controls").parent();
       let controls_box = $(block).children(".review-controls");
       let controls_rating_box = $(controls_box).children(".review-controls__ratingbox");
@@ -505,9 +500,6 @@ $(document).ready(function () {
             $(currentOpen).next(".review-item:hidden").slideDown(300).addClass("opened") ? $('.show_all_reviews span').text(label - 1) : false;
           }
 
-        // $(currentOpen).next('.review-item').slideDown(300)
-        //               .next('.review-item').slideDown(300)
-        //               .next('.review-item').slideDown(300).addClass("opened") ? $('.show_all_reviews span').text(label - 3) : false;
         
         $('.review-item:hidden').length<1 ? $('.show_all_reviews').hide() & $('.close_all_reviews').show() : false;
     
@@ -523,23 +515,60 @@ $(document).ready(function () {
     
       });
 
-     
 
+      // $("button.button").on("click", function () {
+      //     $(this).toggleClass("tap");
+      // });
 
+      const review_form = document.querySelector('.review-form');
+      let inputs = $(review_form).find("input:not([type='file'])");
+      let textarea = $(review_form).find("textarea.review_message");
+      let checkboxes = $(review_form).find("input[type='checkbox']");
+      let submit_button = $("button.add_btn_form");
 
-  
-
-
-      $("button.button").on("click", function () {
-          $(this).toggleClass("tap");
-      });
-
-      // $("button").on("mouseup", function(){
-      //   let color = $(this).css("background");
-      //   $(this).css("background", "red")
-      //   setTimeout(() => $(this).css("background", color), 100);
-      // })
-
+      review_form.addEventListener('change', form_valids);
       
+      function form_valids() {
+        for (let inpts = 0; inpts < inputs.length; inpts++) {
+          let inputs_list = inputs[inpts];
 
+          $(checkboxes).is(":checked") && 
+          $(inputs_list).val() != "" && 
+          $(textarea).val() != "" ?  $(submit_button).removeAttr("disabled") : $(submit_button).attr("disabled", "disabled")
+          
+        }
+      }
+})
+
+
+$(document).ready(function () {
+
+  let butph = document.querySelector(".butph");
+  let butph_css =  $(".butph").css("background");
+  let butph_shadow =  $(".butph").css("box-shadow");
+  
+  $(".butph").mousedown(function(){
+    $(this).css("transform", "scale(0.97)");
+    $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
+    $(this).css("box-shadow", "none");
+  });
+
+  $(".butph").mouseup(function(){
+    $(this).css("transform", "scale(1)");
+    $(this).css("background", butph_css);
+    $(this).css("box-shadow", butph_shadow);
+  });
+
+
+  butph.addEventListener('touchstart', function(){
+    $(this).css("transform", "scale(0.97)");
+    $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
+    $(this).css("box-shadow", "none");
+  });
+
+  butph.addEventListener('touchend', function(){
+    $(this).css("transform", "scale(1)");
+    $(this).css("background", butph_css);
+    $(this).css("box-shadow", butph_shadow);
+  });
 })
