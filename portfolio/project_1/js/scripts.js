@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  let close_button_popup = './img/popup_close.svg';
+  let close_button_popup = '../img/popup_close.svg';
 
 
     for (let e of document.querySelectorAll('input[type="range"].rating-progress')) {
@@ -545,10 +545,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  let butph = document.querySelectorAll(".butph");
+  let butph = document.querySelectorAll(".tapped");
   
-  let butph_css =  $(".butph").css("background");
-  let butph_shadow =  $(".butph").css("box-shadow");
+  let butph_css =  $(".tapped").css("background");
+  let butph_shadow =  $(".tapped").css("box-shadow");
 
 
   [].forEach.call(butph,function(el){
@@ -568,13 +568,13 @@ $(document).ready(function () {
   });
 
 
-  $(".butph").mousedown(function(){
+  $(".tapped").mousedown(function(){
     $(this).css("transform", "scale(0.97)");
     $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
     $(this).css("box-shadow", "none");
   });
 
-  $(".butph").mouseup(function(){
+  $(".tapped").mouseup(function(){
     $(this).css("transform", "scale(1)");
     $(this).css("background", butph_css);
     $(this).css("box-shadow", butph_shadow);
