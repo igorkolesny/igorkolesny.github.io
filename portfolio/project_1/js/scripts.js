@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  let close_button_popup = '../img/popup_close.svg';
+  let close_button_popup = './img/popup_close.svg';
 
 
     for (let e of document.querySelectorAll('input[type="range"].rating-progress')) {
