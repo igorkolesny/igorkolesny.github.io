@@ -516,28 +516,30 @@ $(document).ready(function () {
       });
 
 
-      // $("button.button").on("click", function () {
-      //     $(this).toggleClass("tap");
-      // });
+      let forms = $("form");    
+      [].forEach.call(forms,function(el){
 
-      const review_form = document.querySelector('.review-form');
-      let inputs = $(review_form).find("input:not([type='file'])");
-      let textarea = $(review_form).find("textarea.review_message");
-      let checkboxes = $(review_form).find("input[type='checkbox']");
-      let submit_button = $("button.add_btn_form");
+        el.addEventListener('change', form_valids);
 
-      review_form.addEventListener('change', form_valids);
-      
-      function form_valids() {
-        for (let inpts = 0; inpts < inputs.length; inpts++) {
-          let inputs_list = inputs[inpts];
+        let submit_button = $(el).find("button.add_btn_form");
+        let inputs = $(el).find("input:not([type='file'])");
+        let textarea = $(el).find("textarea.review_message");
+        let checkboxes = $(el).find("input[type='checkbox']");
 
-          $(checkboxes).is(":checked") && 
-          $(inputs_list).val() != "" && 
-          $(textarea).val() != "" ?  $(submit_button).removeAttr("disabled") : $(submit_button).attr("disabled", "disabled")
-          
+        function form_valids() {
+          for (let inpts = 0; inpts < inputs.length; inpts++) {
+            let inputs_list = inputs[inpts];
+  
+            $(checkboxes).is(":checked") && 
+            $(inputs_list).val() != "" && 
+            $(textarea).val() != "" ?  $(submit_button).removeAttr("disabled") : $(submit_button).attr("disabled", "disabled")
+            
+          }
         }
-      }
+
+    
+      });
+
 })
 
 
