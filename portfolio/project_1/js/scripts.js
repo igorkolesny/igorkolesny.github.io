@@ -543,10 +543,29 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  let butph = document.querySelector(".butph");
+  let butph = document.querySelectorAll(".butph");
+  
   let butph_css =  $(".butph").css("background");
   let butph_shadow =  $(".butph").css("box-shadow");
+
+
+  [].forEach.call(butph,function(el){
+
+    el.addEventListener('touchstart', function(){
+      $(this).css("transform", "scale(0.97)");
+      $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
+      $(this).css("box-shadow", "none");
+    });
   
+    el.addEventListener('touchend', function(){
+      $(this).css("transform", "scale(1)");
+      $(this).css("background", butph_css);
+      $(this).css("box-shadow", butph_shadow);
+    });
+
+  });
+
+
   $(".butph").mousedown(function(){
     $(this).css("transform", "scale(0.97)");
     $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
@@ -560,15 +579,4 @@ $(document).ready(function () {
   });
 
 
-  butph.addEventListener('touchstart', function(){
-    $(this).css("transform", "scale(0.97)");
-    $(this).css("background", "linear-gradient(90deg, #048F5F 0%, #048F5F 100%)");
-    $(this).css("box-shadow", "none");
-  });
-
-  butph.addEventListener('touchend', function(){
-    $(this).css("transform", "scale(1)");
-    $(this).css("background", butph_css);
-    $(this).css("box-shadow", butph_shadow);
-  });
 })
