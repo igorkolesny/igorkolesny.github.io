@@ -432,6 +432,10 @@ a.button.button-calculate {
     margin-top: 30px;
 }
 
+.maintabs__item p {
+    color: #666666;
+}
+
 .maintabs__item {
     max-width: 124px;
     width: 100%;
