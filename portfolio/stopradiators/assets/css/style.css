@@ -2022,3 +2022,9 @@ input#callback_page-name{
     text-transform: uppercase;
     color: rgba(63, 70, 78, 0.5);
 }
+
+#send_done .send__text {
+    font-size: 36px;
+    color: #465446;
+    font-weight: bolder;
+}

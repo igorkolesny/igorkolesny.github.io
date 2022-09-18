@@ -192,19 +192,33 @@ $(document).ready(function () {
 
 
 
-    $(".callback__form").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+    $(".callback__form").submit(function (e) { // событие отправки для формы с id=form
         e.preventDefault();
-         var form_data = $(this).serialize(); // Собираем все данные из формы
+         var form_data = $(this).serialize(); 
          $.ajax({
              type: "POST", // Метод отправки
              url: "../../mail.php", // Путь до php файла отправителя
              data: form_data,
              success: function () {
-                 // Код в этом блоке выполняется при успешной отправке сообщения
-                 alert("Ваше сообщение отправлено!");
+               
+                $.fancybox.close();
+                $.fancybox.open({
+                    src: '#send_done',
+                    type: 'inline'
+                });
+                setTimeout(function() {
+                    $.fancybox.close()
+                }, 2000);
+                  
              }
          });
      });
+
+
+     $('[name=number]').inputmask({
+        mask: "+7(999)999-99-99",
+        showMaskOnHover: false
+    });
 
 
 })
