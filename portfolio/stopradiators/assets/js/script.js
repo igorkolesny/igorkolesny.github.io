@@ -2,37 +2,124 @@ $(document).ready(function () {
     
 
     new Swiper(".main-slider", {
-        slidesPerView: "auto",
-        loop: false,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".main-slider__navigation .main-slider__arrow-next",
-          prevEl: ".main-slider__navigation .main-slider__arrow-prev",
-        },
-        pagination: {
-            el: '.main-slider__dots',
-            type: 'bullets',
-            clickable: true,
-        },
-        slideToClickedSlide: false
-      });
+            slidesPerView: "auto",
+            loop: false,
+            spaceBetween: 30,
+            navigation: {
+              nextEl: ".main-slider__navigation .main-slider__arrow-next",
+              prevEl: ".main-slider__navigation .main-slider__arrow-prev",
+            },
+            pagination: {
+                el: '.main-slider__dots',
+                type: 'bullets',
+                clickable: true,
+            },
+            // breakpoints: {
+            //     320: {
+            //       spaceBetween: 0,
+            //     },
+            //     1280: {
+            //       spaceBetween: 30,
+            //     },
+            //   },
+            slideToClickedSlide: false,
+            simulateTouch: false
+    });
 
 
-    new Swiper(".slider-small", {
-        slidesPerView: "auto",
-        loop: true,
-        spaceBetween: 0,
-        nested: true,
-        navigation: {
-            nextEl: ".slider-small__navigation .slider-small__arrow-next",
-            prevEl: ".slider-small__navigation .slider-small__arrow-prev",
-        },
-        slideToClickedSlide: false
-      });
+        new Swiper(".small-photos-nav", {
+            loop: false,
+            slidesPerView: 5,
+            grid: {
+                rows: 2,
+            },
+            autoHeight: false,
+            spaceBetween: 8,
+            nested: true,
+            slideToClickedSlide: true,
+            breakpoints: {
+                320: {
+                  spaceBetween: 4,
+                },
+                1280: {
+                  spaceBetween: 8,
+                },
+              },
+        });
+
+        new Swiper(".slider-small", {
+            slidesPerView: 1,
+            loop: false,
+            spaceBetween: 0,
+            nested: true,
+            navigation: {
+                nextEl: ".slider-small__navigation .slider-small__arrow-next",
+                prevEl: ".slider-small__navigation .slider-small__arrow-prev",
+            },
+            slideToClickedSlide: false,
+        });
 
 
 
+        // $(window).resize();
 
+
+       
+
+
+
+        // $(window).resize(function () {
+            if ($(window).width() <= 1280) {
+                initSteps_slider();
+            }
+        // });
+    
+
+        function initSteps_slider() {
+            new Swiper(".steps-slider", {
+                slidesPerView: "auto",
+                loop: false,
+                spaceBetween: 20,
+                autoHeight: true,
+                navigation: {
+                    nextEl: ".steps__nav .steps__nav-next",
+                    prevEl: ".steps__nav .steps__nav-prev",
+                },
+                slideToClickedSlide: false,
+            })
+        }
+
+
+        
+
+        $(".fancybox").fancybox({
+            hideOnContentClick: true,
+            protect: false, 
+            loop: true, 
+            arrows : true, 
+            infobar : true, 
+            toolbar : true, 
+            buttons : [
+            // 'slideShow',
+            // 'fullScreen',
+            // 'thumbs',
+            // 'share',
+            //'download',
+            //'zoom',
+            // 'close'
+            ],
+            touch : false,
+            animationEffect : "zoom-in-out", 
+            transitionEffect: 'slide', 
+            animationDuration : 500, 
+            transitionDuration : 1366,
+            slideClass : '',
+    
+        });
+
+    
+
+      
 
       $(".img_gallery").fancybox({
 		hideOnContentClick: false,
@@ -94,7 +181,30 @@ $(document).ready(function () {
         }
         $(this).toggleClass('active').next().slideToggle(300);
         $(this).parent().toggleClass("current")
-      })
+    });
+
+
+
+    $(".burger").click(function () {
+        $(this).toggleClass("opened")
+        $(".mobile__menu-wrapper").slideToggle(300)
+    });
+
+
+
+    $(".callback__form").submit(function (e) { // Устанавливаем событие отправки для формы с id=form
+        e.preventDefault();
+         var form_data = $(this).serialize(); // Собираем все данные из формы
+         $.ajax({
+             type: "POST", // Метод отправки
+             url: "../../mail.php", // Путь до php файла отправителя
+             data: form_data,
+             success: function () {
+                 // Код в этом блоке выполняется при успешной отправке сообщения
+                 alert("Ваше сообщение отправлено!");
+             }
+         });
+     });
 
 
 })

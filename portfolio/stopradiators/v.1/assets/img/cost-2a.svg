@@ -1,0 +1,33 @@
+<svg width="77" height="77" viewBox="0 0 77 77" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_150_11539)">
+<path d="M8.61133 37.7676V68.0031H56.0255" stroke="#BB8E34" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M56.9423 25.8928C56.9423 25.3864 56.5318 24.9759 56.0254 24.9759C55.519 24.9759 55.1084 25.3864 55.1084 25.8928H56.9423ZM66.8482 68.9235C67.3546 68.9235 67.7651 68.5129 67.7651 68.0065C67.7651 67.5001 67.3546 67.0896 66.8482 67.0896V68.9235ZM56.0254 68.0065H55.1084C55.1084 68.5129 55.519 68.9235 56.0254 68.9235V68.0065ZM66.8482 67.0896H56.0254V68.9235H66.8482V67.0896ZM56.9423 68.0065V25.8928H55.1084V68.0065H56.9423Z" fill="#BB8E34"/>
+<path d="M8.61133 37.7676V68.0031H31.2877V37.7676" stroke="#BB8E34" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M57.5684 25.8928H66.845L71.9988 37.771H62.2067L57.5684 25.8928Z" stroke="#BB8E34" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M13.002 25.8928H7.06344L5.00195 37.2311H52.4161L54.4776 25.8928H41.002" stroke="#BB8E34" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M37.8681 38.3062V37.3892H36.0342V38.3062H37.8681ZM36.0342 43.7053C36.0342 44.2118 36.4448 44.6223 36.9512 44.6223C37.4576 44.6223 37.8681 44.2118 37.8681 43.7053H36.0342ZM36.0342 38.3062V43.7053H37.8681V38.3062H36.0342Z" fill="#BB8E34"/>
+<line x1="37.3564" y1="53.801" x2="37.3564" y2="67.0848" stroke="#BB8E34" stroke-width="1.83388" stroke-linecap="round"/>
+<line x1="37.3564" y1="47.3251" x2="37.3564" y2="49.8106" stroke="#BB8E34" stroke-width="1.83388" stroke-linecap="round"/>
+<path d="M65.9327 68.0044C65.9327 68.5108 66.3432 68.9213 66.8496 68.9213C67.356 68.9213 67.7666 68.5108 67.7666 68.0044H65.9327ZM67.7666 37.7689C67.7666 37.2625 67.356 36.852 66.8496 36.852C66.3432 36.852 65.9327 37.2625 65.9327 37.7689H67.7666ZM67.7666 68.0044V37.7689H65.9327V68.0044H67.7666Z" fill="#BB8E34"/>
+<rect x="13.002" y="1.00732" width="28" height="32.5436" stroke="#BB8E34" stroke-width="1.76" stroke-linejoin="round"/>
+<path d="M32.452 6.52527C32.1858 6.11867 31.6404 6.00487 31.2338 6.2711C30.8272 6.53733 30.7134 7.08277 30.9796 7.48938L32.452 6.52527ZM34.3349 11.0073L33.5986 11.4894C33.7567 11.7308 34.0231 11.8794 34.3115 11.887C34.6 11.8947 34.8739 11.7604 35.0445 11.5277L34.3349 11.0073ZM38.7112 6.52772C38.9986 6.1358 38.9139 5.5851 38.5219 5.29769C38.13 5.01028 37.5793 5.095 37.2919 5.48692L38.7112 6.52772ZM30.9796 7.48938L33.5986 11.4894L35.0711 10.5253L32.452 6.52527L30.9796 7.48938ZM35.0445 11.5277L38.7112 6.52772L37.2919 5.48692L33.6252 10.4869L35.0445 11.5277Z" fill="#BB8E34"/>
+<line x1="16.882" y1="8.12732" x2="27.6934" y2="8.12732" stroke="#BB8E34" stroke-width="1.76" stroke-linecap="round"/>
+<line x1="16.882" y1="27.1273" x2="27.122" y2="27.1273" stroke="#BB8E34" stroke-width="1.76" stroke-linecap="round"/>
+<rect x="31.002" y="26.0073" width="7" height="5" stroke="#BB8E34" stroke-width="1.76" stroke-linejoin="round"/>
+<line x1="16.882" y1="17.1273" x2="27.122" y2="17.1273" stroke="#BB8E34" stroke-width="1.76" stroke-linecap="round"/>
+<line x1="37.7666" y1="15.1411" x2="31.7465" y2="21.1612" stroke="#BB8E34" stroke-width="1.62167" stroke-linecap="round"/>
+<line x1="31.6545" y1="15.2791" x2="37.6747" y2="21.2992" stroke="#BB8E34" stroke-width="1.62167" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_d_150_11539" x="0.0849609" y="0.127441" width="76.8311" height="76.7961" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.4 0 0 0 0 0.4 0 0 0 0 0.4 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_150_11539"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_150_11539" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.61133 37.7676V68.0031H52.0255" stroke="#666666" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M52.0254 25.8928V68.0065H62.8482" stroke="#666666" stroke-width="1.83388" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.61133 37.7676V68.0031H27.2877V37.7676" stroke="#666666" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M53.5684 25.8928H62.845L67.9988 37.771H58.2067L53.5684 25.8928Z" stroke="#666666" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M9.00195 25.8928H3.06344L1.00195 37.2311H48.4161L50.4776 25.8928H37.002" stroke="#666666" stroke-width="1.83388" stroke-linejoin="round"/>
+<path d="M33.8681 38.3062V37.3892H32.0342V38.3062H33.8681ZM32.0342 43.7053C32.0342 44.2118 32.4448 44.6223 32.9512 44.6223C33.4576 44.6223 33.8681 44.2118 33.8681 43.7053H32.0342ZM32.0342 38.3062V43.7053H33.8681V38.3062H32.0342Z" fill="#666666"/>
+<line x1="33.3564" y1="53.801" x2="33.3564" y2="67.0848" stroke="#666666" stroke-width="1.83388" stroke-linecap="round"/>
+<line x1="33.3564" y1="47.3251" x2="33.3564" y2="49.8106" stroke="#666666" stroke-width="1.83388" stroke-linecap="round"/>
+<path d="M62.8496 68.0044V37.7689" stroke="#666666" stroke-width="1.83388" stroke-linecap="round"/>
+<rect x="9.00195" y="1.00732" width="28" height="32.5436" stroke="#666666" stroke-width="1.76" stroke-linejoin="round"/>
+<path d="M28.452 6.52527C28.1858 6.11867 27.6404 6.00487 27.2338 6.2711C26.8272 6.53733 26.7134 7.08277 26.9796 7.48938L28.452 6.52527ZM30.3349 11.0073L29.5986 11.4894C29.7567 11.7308 30.0231 11.8794 30.3115 11.887C30.6 11.8947 30.8739 11.7604 31.0445 11.5277L30.3349 11.0073ZM34.7112 6.52772C34.9986 6.1358 34.9139 5.5851 34.5219 5.29769C34.13 5.01028 33.5793 5.095 33.2919 5.48692L34.7112 6.52772ZM26.9796 7.48938L29.5986 11.4894L31.0711 10.5253L28.452 6.52527L26.9796 7.48938ZM31.0445 11.5277L34.7112 6.52772L33.2919 5.48692L29.6252 10.4869L31.0445 11.5277Z" fill="#666666"/>
+<line x1="12.882" y1="8.12732" x2="23.6934" y2="8.12732" stroke="#666666" stroke-width="1.76" stroke-linecap="round"/>
+<line x1="12.882" y1="27.1273" x2="23.122" y2="27.1273" stroke="#666666" stroke-width="1.76" stroke-linecap="round"/>
+<rect x="27.002" y="26.0073" width="7" height="5" stroke="#666666" stroke-width="1.76" stroke-linejoin="round"/>
+<line x1="12.882" y1="17.1273" x2="23.122" y2="17.1273" stroke="#666666" stroke-width="1.76" stroke-linecap="round"/>
+<line x1="33.7666" y1="15.1411" x2="27.7465" y2="21.1612" stroke="#666666" stroke-width="1.62167" stroke-linecap="round"/>
+<line x1="27.6545" y1="15.2791" x2="33.6747" y2="21.2992" stroke="#666666" stroke-width="1.62167" stroke-linecap="round"/>
+</svg>

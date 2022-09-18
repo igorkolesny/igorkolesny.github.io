@@ -1,21 +1,21 @@
 <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="1" y="1.00684" width="67" height="67" stroke="#666666" stroke-width="1.66981" stroke-linejoin="round"/>
-<ellipse cx="13.6579" cy="13.8035" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="13.6579" cy="27.9861" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="13.6579" cy="42.1724" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="13.6579" cy="56.355" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="27.5514" cy="13.8035" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="27.5514" cy="27.9861" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="27.5514" cy="42.1724" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="27.5514" cy="56.355" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="41.4479" cy="13.8035" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="41.4479" cy="27.9861" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="41.4479" cy="42.1724" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="41.4479" cy="56.355" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="55.3415" cy="13.8035" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="55.3415" cy="27.9861" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="55.3415" cy="42.1724" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<ellipse cx="55.3415" cy="56.355" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
-<path d="M7 7.00684V58.1524C7 60.9138 9.23858 63.1524 12 63.1524H29.5C32.2614 63.1524 34.5 60.9138 34.5 58.1524V11.6856" stroke="#666666" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M62 63.1523L62 12.0068C62 9.24539 59.7614 7.00681 57 7.00681L39.5 7.00681C36.7386 7.00681 34.5 9.24538 34.5 12.0068L34.5 58.4736" stroke="#666666" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="1" y="1" width="67" height="67" stroke="#666666" stroke-width="1.66981" stroke-linejoin="round"/>
+<ellipse cx="13.6579" cy="13.7967" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="13.6579" cy="27.9793" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="13.6579" cy="42.1656" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="13.6579" cy="56.3482" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="27.5514" cy="13.7967" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="27.5514" cy="27.9793" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="27.5514" cy="42.1656" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="27.5514" cy="56.3482" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="41.4479" cy="13.7967" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="41.4479" cy="27.9793" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="41.4479" cy="42.1656" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="41.4479" cy="56.3482" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="55.3415" cy="13.7967" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="55.3415" cy="27.9793" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="55.3415" cy="42.1656" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<ellipse cx="55.3415" cy="56.3482" rx="3.90789" ry="3.98929" stroke="#666666" stroke-width="1.76"/>
+<path d="M7 7V58.1455C7 60.907 9.23858 63.1455 12 63.1455H29.5C32.2614 63.1455 34.5 60.9069 34.5 58.1455V11.6788" stroke="#666666" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M62 63.1455L62 12C62 9.23855 59.7614 6.99997 57 6.99997L39.5 6.99998C36.7386 6.99998 34.5 9.23855 34.5 12L34.5 58.4667" stroke="#666666" stroke-width="1.76" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
