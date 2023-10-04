@@ -3,14 +3,14 @@
  * Plugin Name: WPLoyalty - WooCommerce Loyalty Points, Rewards and Referral
  * Plugin URI: https://www.wployalty.net
  * Description: Loyalty Rules and Referrals for WooCommerce. Turn your hard-earned sales into repeat purchases by rewarding your customers and building loyalty.
- * Version: 1.2.2
+ * Version: 1.2.4
  * Author: Wployalty
  * Slug: wp-loyalty-rules
  * Text Domain: wp-loyalty-rules
  * Domain Path: /i18n/languages/
  * Requires at least: 4.9.0
  * WC requires at least: 6.5
- * WC tested up to: 7.7
+ * WC tested up to: 7.9
  * Contributors: Wployalty, Alagesan
  * Author URI: https://wployalty.net/
  * License: GPLv2 or later
@@ -19,7 +19,7 @@
 
 defined('ABSPATH') or die;
 //Define the plugin version
-defined('WLR_PLUGIN_VERSION') or define('WLR_PLUGIN_VERSION', '1.2.2');
+defined('WLR_PLUGIN_VERSION') or define('WLR_PLUGIN_VERSION', '1.2.4');
 //Define the plugin env
 defined('WLR_PLUGIN_ENV') or define('WLR_PLUGIN_ENV', 'production');
 // Define the plugin text domain
@@ -27,7 +27,7 @@ defined('WLR_TEXT_DOMAIN') or define('WLR_TEXT_DOMAIN', 'wp-loyalty-rules');
 // Define the slug
 defined('WLR_PLUGIN_SLUG') or define('WLR_PLUGIN_SLUG', 'wp-loyalty-rules');
 // Define plugin path
-defined('WLR_PLUGIN_PATH') or define('WLR_PLUGIN_PATH', __DIR__ . '/');
+defined('WLR_PLUGIN_PATH') or define('WLR_PLUGIN_PATH', str_replace('\\', '/', __DIR__) . '/');
 // Define plugin URL
 defined('WLR_PLUGIN_URL') or define('WLR_PLUGIN_URL', plugin_dir_url(__FILE__));
 // Define plugin file
@@ -59,6 +59,11 @@ if (!function_exists('isWoocommerceActive')) {
 if (!isWoocommerceActive()) {
     return;
 }
+add_action('before_woocommerce_init', function () {
+    if (class_exists(\Automattic\WooCommerce\Utilities\FeaturesUtil::class)) {
+        \Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility('custom_order_tables', __FILE__, true);
+    }
+});
 // Autoload the vendor
 if (!file_exists(__DIR__ . '/vendor/autoload.php')) {
     return;
